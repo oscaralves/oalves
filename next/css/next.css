@@ -40,7 +40,7 @@ margin-top:100px;
     border: 3px solid #000000;
 }
 
-.button.primary:hover {
+.button.primary:hover, .button.primary:active {
     background-color: #e23d96;
     border-color: #e23d96;
 }
@@ -50,7 +50,7 @@ margin-top:100px;
     color: #000000;
 }
 
-.button.secondary:hover {
+.button.secondary:hover, .button.secondary:active {
     border-color: #e23d96;
     color: #e23d96;
 }
