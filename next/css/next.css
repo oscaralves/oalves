@@ -65,9 +65,26 @@ margin-top:100px;
     color: #e23d96;
 }
 
+.button.transac {
+    background-color: #009fff;
+    color: #ffffff;
+    border: 3px solid #009fff;
+}
+
+.button.transac:hover {
+    background-color: #000000;
+    border-color: #000000;
+}
+
+.button.transac:active {
+    background-color: #000000;
+    border-color: #000000;
+}
+
 .buttonsRow .button{
     margin-right:30px;   
 }
+
 
 
 @media (max-width: 550px) {
