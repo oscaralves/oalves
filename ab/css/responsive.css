@@ -1,0 +1,460 @@
+
+@media all and (max-width: 1199px){
+    
+    html{font-size:52.5%;}
+    
+    #fp-nav ul li .fp-tooltip.fp-right{top:2px;right:2.5rem;}
+    
+    header nav{top:7.3rem;}
+    #headerRight .searchbtn{padding:2px 25px;}
+    
+    .phMorph svg{width:85%;}
+    .phMorph svg:last-child{width:75%;}
+    .phMorph img{width:40%;}
+    #phElements img:nth-child(9){right:45%;}
+    #phElements img:nth-child(8){right:14%;}
+    #phElements img:nth-child(6){right:13%;}
+    #phElements img:nth-child(1){left:3%;}
+    
+    #fpCartoes > .row:last-child div button{font-size:14px;}
+    #fpCartoes > .row:last-child p{height:70px;}
+    
+    .habBullets .bulletText{left:11.5rem;}
+    
+    #credito_desktop{max-width:100%;}
+    #credito #simuladorCP{bottom:14rem;}
+    #credito .btnContainer{bottom:2.2rem;left:224px;}
+    
+    .appSlide{width:180px;}
+    
+    .cardSeg{height:130px;}
+    .cardSeg h6{font-size:16px;}
+    .cardSeg img{max-width:50px;}
+    .cardSeg span{font-size:25px;}
+        
+}
+
+@media all and (max-width: 991px){
+    
+    html{font-size:42.5%;}
+    
+    #fp-nav ul li .fp-tooltip.fp-right{right:3rem;top:1px;font-size:10px;}
+    
+    header{padding-top:30px;}
+    #headerLeft #smalllogo, #headerLeft #fulllogo{margin:5px 0 0 37px;}
+    #btnMenuModal button .burger-inner{bottom:41px;}
+    header nav{top:34px;}
+    header nav ul li{font-size:2rem;padding:0 1.5rem;}
+    #headerRight .searchbtn{right:75px;}
+    
+    #phElements img:nth-child(9){right:40%;top:38%;width:25px;}
+    #phElements img:nth-child(8){width:20px;right:11%;}
+    #phElements img:nth-child(3){bottom:0;}
+    #phElements img:nth-child(1){left:1%;width:25px;}
+    #phElements img:nth-child(5){bottom:4%;}
+    
+    #fpCliAB .col-md-6 .card .cardText{max-width:75%;}
+    .cliABCards .card .cardText{padding:20px 20px 15px 20px;}
+    .cliABCards .card .cardText h6{font-size:20px;}
+    .cliABCards .card .cardText p{font-size:13px;}
+    .cliABCards .card .cardForm{width:75%;}
+    
+    #extrasCartoes > .row:last-child p{font-size:1.8rem;}
+    #fpCartoes > .row:last-child p{font-size:2.3rem;height:55px;}
+    #fpCartoes > .row:first-child div img{right:0;margin:auto;}
+    
+    .habBullets .bulletText{font-size:13px;}
+    #fpHabitacao > .row > div:first-child img:first-child{right:0;width:100%;}
+    #fpHabitacao > .row > div:first-child svg{width:100%;}
+    .habBullets:nth-child(1){margin-left:2rem;}
+    .habBullets:nth-child(2){margin-left:6rem;}
+    .habBullets:nth-child(3){margin-left:0;}
+    .habBullets .bulletText{left:13.5rem;}
+    
+    #credito .sectionHeading h2{font-size:32px;line-height:38px;}
+    #credito .sectionHeading p{font-size:17px;margin-bottom:35px;}
+    #credito #simuladorCP{bottom:21rem;}
+    #credito #resultado{top:70px;left:100px;}
+    #credito .btnContainer{bottom:9.2rem;left:155px;}
+    
+    #cardsSeguros .container .row > div{padding-right:10px;padding-left:10px;}
+    .cardSeg{padding:20px 10px;height:120px;}
+    .cardSeg h6{font-size:14px;}
+    .cardSeg img{max-width:45px;bottom:15px;}
+    .cardSeg span{bottom:15px;right:15px;font-size:20px;}
+    
+    .appSlide{width:160px;}
+    
+    #testemunhosCarousel .carousel-item p:first-child{font-size:12px;}
+    #premios{font-size:13px;}
+    
+    footer > section #topMenu ul li{font-size:13px;margin-right:20px;}
+    footer > section #topMenu aside:last-child span{font-size:14px;margin-left:8px;}
+    footer > section #topMenu{padding:0 0 20px 0;}
+    footer #topMenu nav{width:459px;margin:0 auto;}
+    footer > section #bottomMenu ul li{font-size:12px;}
+    footer > section .container > p{font-size:11px;}
+        
+}
+
+@media all and (min-height: 768px) and (max-height: 900px){
+    
+    #phElements img:nth-child(10){bottom:-15px;}
+    
+    #cartoes h2{margin-bottom:25px;}
+    #extrasCartoes .cardSliderButtons p{font-size:15px;margin:10px 0 20px 0;}
+    #extrasCartoes > .row:last-child p{font-size:13px;line-height:20px;}
+    #extrasCartoes > .row:last-child{margin-bottom:30px;}
+    #fpCartoes > .row:last-child p, #extrasCartoes > .row:last-child p{margin:2rem 0;font-size:14px;line-height:20px;}
+    
+    #fpHabitacao > .row{margin-bottom:0;}
+    #fpHabitacao .sectionHeading p{margin-bottom:4rem;}
+    #fpHabitacao > .row{margin-top:4rem;}
+    
+    #depInvest .sectionHeading{margin-bottom:20px;}
+    #depInvest .sectionContent > .container > .row > div:first-child{height:370px;}
+    
+    #appVantagens{margin-top:30px;}
+    
+    #testemunhos{margin-top:15px;}
+    #testemunhos > span{font-size:40px;}
+    #testemunhosCarousel{margin:10px 0 30px 0;}
+    #testemunhosCarousel .carousel-item{height:70px;}
+    #testemunhosCarousel .carousel-item p:first-child{font-size:14px;line-height:20px;}
+    
+}
+
+@media all and (min-height: 768px) and (max-height: 900px) and (min-width: 768px) and (max-width: 991px){
+    
+    #extrasCartoes .cardSliderButtons p{font-size:13px;}
+    #extrasCartoes > .row:last-child{margin-bottom:75px;}
+    
+    #testemunhosCarousel .carousel-item{height:95px;}
+    
+}
+
+@media all and (max-width: 767px){
+    
+    #fpCopy .row > div:last-child,
+    header nav,
+    #fpCliAB h2,
+    .appdltxt_desktop,
+    #appVantagens,
+    footer > section #topMenu aside:first-child,
+    footer > section #topMenu aside:last-child,
+    footer > section #bottomMenu aside,
+    #extrasCartoes,
+    #fpCartoes > .row:last-child p,
+    #credito .sectionHeading small,
+    #credito .row > div:first-child button.white.orange,
+    #videoSeguros,
+    #bgSeguros #vdSegFilter,
+    #fpCartoes > .row:first-child,
+    #cardsSeguros,
+    #depInvest .sectionHeading small,
+    #fpHabitacao .row > div:first-child,
+    #fpCliAB .row,
+    #cliAct .sectionContent > img,
+    #headerLeft,
+    #headerRight #btnConta,
+    #headerRight #btnLogin,
+    #pageHeaderCurve,
+    .phElem,
+    #credito_desktop{
+        display:none;
+    }
+    
+    body.body-dark #btnMenuModal .burger-inner,
+    body.body-dark #btnMenuModal .burger-inner::before,
+    body.body-dark #btnMenuModal .burger-inner::after{
+        background-color:#ffffff;
+    }
+    body.body-dark #btnMenuModal button.is-active .burger-inner,
+    body.body-dark #btnMenuModal button.is-active .burger-inner::before,
+    body.body-dark #btnMenuModal button.is-active .burger-inner::after{
+        background-color:#ffffff;
+    }
+    body.body-dark header #headerLeft #smalllogo{color:#ffffff;}
+    body.body-dark header #headerLeft #burguer{color:#ffffff;}
+    body.body-dark header #headerRight span{color:#ffffff;}
+    body.body-dark header #headerRight #btnLock{border:solid 0.1rem #000000;}
+    body.body-dark header #headerRight #btnConta{border:solid 0.1rem #ffffff !important;color:#ffffff;}
+    
+    .fp-section, .fp-tableCell{height:auto !important;}
+    .sectionContent{margin:100px 0;position:static;transform:none;}
+    .sectionHeading{margin:0 30px;}
+    h2{font-size:30px;line-height:35px;}
+    .sectionHeading p{font-size:18px;}
+    
+    #menuModal .modal-dialog{height:100%;}
+    #menuModal .modal-content #menuContent{top:100px;transform:none;transform:translateX(-50%);}
+    #menuModal .modal-content .mainNav ul li{font-size:30px;}
+    
+    header{padding-top:32px;}
+    #btnMenuModal button .burger-inner{bottom:11px;}
+    #btnMenuModal button{position:absolute;}
+    #btnMenuModal button.is-active{position:fixed;z-index:99999;}
+    #btnMenuModal button .burger-box{top:30px;}
+    #headerRight #btnLock{opacity:1;border:none;}
+    #headerRight #btnLock{font-size:22px;}
+    #headerRight .searchbtn{right:50px;padding:0 10px;}
+    #headerRight span{position:static;}
+    
+    #pageHeader{
+        position:relative;
+        height:675px !important;
+        height:100vh !important;
+        background:url('../assets/pageHeader/headerImage.jpg') center center no-repeat;
+        background-size:cover;
+    }
+    #pageHeaderCurve_mobile{display:block;bottom:-1px;position:absolute;max-width:101%;left:-1px;}
+    #fpCopy{text-align:center;position:absolute;top:50%;transform:translateX(-50%) translateY(-50%);margin:0;}
+    #logo_mobile{
+        display:block;
+        font-size:50px !important;
+        font-family:'Simple', sans-serif;
+        letter-spacing:-3px;
+        position:absolute;
+        left:0;right:0;
+        top:70px;
+        text-align:center;
+        color:#ffffff;
+    }
+    
+    .swiper-container {
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+        list-style: none;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+    .swiper-wrapper {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-transition-property: -webkit-transform;
+        transition-property: -webkit-transform;
+        -o-transition-property: transform;
+        transition-property: transform;
+        transition-property: transform, -webkit-transform;
+        -webkit-box-sizing: content-box;
+        box-sizing: content-box;
+        -webkit-transform: translate3d(0px, 0, 0);
+        transform: translate3d(0px, 0, 0);
+    }
+    .swiper-slide{
+        -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        height: 100%;
+        position: relative;
+        -webkit-transition-property: -webkit-transform;
+        transition-property: -webkit-transform;
+        -o-transition-property: transform;
+        transition-property: transform;
+        transition-property: transform, -webkit-transform;
+    }
+    .swiper-pagination {
+        position: absolute;
+        text-align: center;
+        -webkit-transition: 300ms opacity;
+        -o-transition: 300ms opacity;
+        transition: 300ms opacity;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        z-index: 10;
+        bottom:0;
+        left: 0;
+        width: 100%;
+    }
+    .swiper-pagination-bullet{display:inline-block;border-radius: 100%;cursor: pointer;margin: 0 4px;}
+    
+    #cliAB_m{display:block;}
+    #cliAB_m .swiper-slide{width:320px !important;}
+    .cliABCards .card{height:380px;}
+    #cliAB_m .swiper-container{height:430px;}
+    #cliAB_m .swiper-pagination-bullet{width:12px;height:12px;background-color:#CFD4D9;}
+    #cliAB_m .swiper-pagination-bullet-active{background:#617283;}
+    
+    .separadorCartoes{width:510px;height:2px;}
+    #fpCartoes > .row:first-child{z-index:auto;}
+    #fpCartoes_m{
+        display:block;
+        position:relative;
+        height:163px;
+        width:395px;
+        left:0;right:0;
+        margin:auto;
+        margin-bottom:-6px;
+    }
+    #fpCartoes_m img{width:245px;position:absolute;}
+    #fpCartoes_m img:first-child{z-index:15;left:0;}
+    #fpCartoes_m img:last-child{z-index:10;left:153px;}
+    #fpCartoes > .row:last-child div button{max-width:300px;margin:10px 0;font-size:18px;}
+    #infoCartoes_m{display:block;margin:70px 0;}
+    .infoCartao{margin-bottom:50px;position:relative;}
+    .infoCartao:before{
+        position:absolute;
+        color:#390E47;
+        font-weight:700;
+        font-size:100px;
+        left:0;
+        z-index:5;
+    }
+    .infoCartao:nth-child(1):before{content:'1';}
+    .infoCartao:nth-child(2):before{content:'2';}
+    .infoCartao:nth-child(3):before{content:'3';}
+    .infoCartao:nth-child(4):before{content:'4';}
+    .infoCartao h6{
+        color:#ffffff;
+        font-size:20px;
+        font-weight:700;
+        margin-bottom:15px;
+        position:relative;
+        z-index:20;
+    }
+    .infoCartao p{
+        color:#ffffff;
+        font-size:16px;
+        line-height:25px;
+        font-weight:300;
+        position:relative;
+        z-index:20;
+    }
+    
+    #credito .sectionHeading{text-align:center;}
+    #credito .container .row > div:last-child{margin-top:50px;}
+    #credito aside{position:static;margin-top:95px;}
+    #credito_mobile{display:block;max-width:100%;}
+    #credito #simuladorCP{bottom:85px;}
+    #credito #resultado{left:100px;top:30px;}
+    #credito .btnContainer{bottom:-7.8rem;left:0;right:0;}
+    #credito #simuladorCP p.credLegenda{font-size:13px;}
+    #btn_oqsaber{display:block;font-size:18px;color:#ffffff;margin-top:25px;}
+    
+    #depInvest .sectionContent > .container > .row > div img{top:3rem;}
+    #depInvest .sectionContent > .container > .row > div img:nth-child(1){max-width:90%;}
+    #depInvest .sectionContent > .container > .row > div:last-child{margin-bottom:20px;height:auto;width:100%;}
+    #depInvest .sectionContent > .container > .row > div:first-child{height:350px;margin-bottom:50px;}
+    #depInvest .sectionContent > .container > .row > div svg{max-width:80%;height:100%;}
+    
+    #appAB .sectionContent{top:0;transform:none;}
+    #appAB .sectionContent .container{height:380px;}
+    .appSlide img{padding:0 10px;}
+    #appAB aside .container{padding-top:15px;padding-bottom:15px;}
+    .appdltxt_mobile{display:block;text-align:center;}
+    .appdltxt_mobile p{color:#ffffff;font-size:14px;margin-bottom:15px;}
+    .appSlide{width:230px;}
+    
+    #fpHabitacao .sectionHeading{margin-bottom:80px;}
+    .habBullets{height:auto;}
+    .habBullets:nth-child(1), .habBullets:nth-child(2), .habBullets:nth-child(3){margin-left:0;}
+    .habBullets .bullet{position:static;}
+    .habBullets .bullet span{top:40px;font-size:25px;}
+    .habBullets .bulletText{
+        position:static;
+        font-size:20px;
+        text-align:center;
+        transform:none;
+        margin-top:20px;
+    }
+    .habBullets .bulletText p{font-size:18px;line-height:22px;padding:0 30px;}
+    
+    #seguros{background-color:#009EFF !important;}
+    #bgSeguros{height:auto;}
+    #bgSeguros .sectionHeading{text-align:center;}
+    #bgSeguros .sectionHeading h2{font-size:36px;}
+    #cardSeg_m{display:block;margin-top:70px;}
+    .cardSeg{width:230px;height:230px;}
+    #cardSeg_m .swiper-slide{width:230px !important;}
+    #cardSeg_m .swiper-container{height:280px;}
+    #cardSeg_m .swiper-pagination-bullet{width:12px;height:12px;border:solid 1px #ffffff;}
+    #cardSeg_m .swiper-pagination-bullet-active{background:#ffffff;}
+    .cardSeg h6{font-size:30px;margin-bottom:5px;}
+    .cardSeg p{font-size:14px;color:#617283;}
+    .cardSeg img{max-width: 100%;width: 80px;}
+    .cardSeg span{font-size:40px;}
+    
+    #premios{font-size:18px;}
+    #premios small{margin-bottom:25px;line-height:25px;}
+    #testemunhosCarousel .carousel-item{height:100%;}
+    #testemunhosCarousel .carousel-item p:first-child{font-size:16px;font-weight:400;}
+    #testemunhosCarousel .carousel-item p:last-child{font-size:16px;margin-top:40px;}
+    #final .sectionContent{transform:none;}
+    
+    footer{position:static;}
+    footer > section .container > div ul li{display:block;}
+    footer #topMenu nav{width:100%;}
+    footer > section #topMenu ul li{margin:25px 0;font-size:16px;}
+    footer > section #bottomMenu nav{position:static;}
+    footer > section #bottomMenu ul li{margin:15px 0;font-size:14px;}
+    #mb-footer-mobile{display:block;padding-bottom:30px;}
+    #mb-footer-mobile #mb-redes{float:left;}
+    #mb-footer-mobile #mb-redes span{font-size:19px;margin-left:10px;}
+    #mb-footer-mobile #mb-language{float:right;}
+    #mb-footer-mobile #mb-language a{color:#ffffff;margin-left:10px;opacity:0.7;font-size:14px;}
+    #mb-footer-mobile #mb-language a.active{color:#ffffff;font-weight:500;opacity:1;}
+    
+    
+}
+
+@media all and (max-width: 575px){
+    
+    #headerRight{margin-right:10px;}
+    #btnMenuModal button{left:30px;}
+    
+    #menuModal .modal-content #menuContent{padding-left:45px;}
+    
+    #cliAB_m .swiper-slide{width:260px !important;}
+    .cliABCards .card{height:320px;}
+    #cliAB_m .swiper-container{height:380px;}
+    
+    #fpCartoes_m img{width:170px;}
+    #fpCartoes_m img:last-child{left:108px;}
+    .separadorCartoes{width:100%;}
+    #fpCartoes_m{width:290px;height:113px;}
+    
+    #credito #simuladorCP{right:0;left:50%;transform:translateX(-50%);}
+    #credito aside a{font-size:13px;}
+    #credito .btnContainer{position:static;margin-top:30px;}
+    #credito #simuladorCP{
+        width:100%;
+        padding:0 15px;
+        position:static;
+        transform:none;
+        margin-top:30px;    
+    }
+    #credito_mobile{display:none;}
+    #credito .container .row > div:last-child{position:static;margin-top:25px;}
+    #credito #resultado{position:relative;left:0;}
+    #credito aside{margin-top:40px;}
+    
+}
+
+@media all and (max-width: 480px){
+    
+    #depInvest .sectionContent > .container > .row > div:first-child{height:350px;}
+    
+}
+
+
+@media all and (max-width: 767px) and (max-height: 640px){
+    
+    #menuModal .modal-content{max-height:480px;}
+    #menuModal .modal-content .mainNav ul li{font-size:20px !important;margin-bottom:15px;}
+    #menuModal .modal-content nav{margin-bottom:25px !important;}
+    #menuModal .modal-content .secondNav ul li{font-size:15px;margin-bottom:15px;}
+    
+}
+
+@media all and (max-width: 400px) and (max-height: 640px){#depInvest .sectionContent > .container > .row > div:first-child{height:250px;}}
+@media all and (min-height: 901px) and (min-width: 1200px){
+
+    #appAB .sectionContent{top:20vh;}
+    .appSlide{width:250px;}
+
+}

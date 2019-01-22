@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="681px" height="2px" viewBox="0 0 681 2" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle 11</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="-3.25755878%" y1="-5.47113954e-23%" x2="97.3802532%" y2="-5.47113954e-23%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="50.6231936%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01---Homepage---Não-Cliente-" transform="translate(-386.000000, -2440.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <g id="Cartões" transform="translate(0.000000, 1800.000000)">
+                <g id="Cards" transform="translate(279.000000, 499.000000)">
+                    <g id="Group-3-Copy" transform="translate(107.000000, 0.000000)">
+                        <g id="Group-14">
+                            <path d="M0.833333333,141 L699.166667,141 C699.626904,141 700,141.373096 700,141.833333 L700,141.833333 C700,142.293571 699.626904,142.666667 699.166667,142.666667 L0.833333333,142.666667 C0.373096042,142.666667 5.63628126e-17,142.293571 0,141.833333 L0,141.833333 C-5.63628126e-17,141.373096 0.373096042,141 0.833333333,141 Z" id="Rectangle-11"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
