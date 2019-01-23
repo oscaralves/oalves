@@ -24,3 +24,13 @@ $(function() {
     });
 
 });
+
+$(function() {
+
+    var dd = new DropDown( $('#suporteCatDrop') );
+
+    $(document).click(function() {
+        $('.suporteCatDrop').removeClass('active');
+    });
+
+});
