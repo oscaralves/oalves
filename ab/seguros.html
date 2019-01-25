@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+<head>
+    <meta charset="UTF-8"/> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Seguros | Next 2.0 - ActivoBank</title>
+    <!-- @Googlefonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+    <!-- @Stylesheets -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/fonts.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/responsive.css" rel="stylesheet" type="text/css">
+    <!-- @Scripts -->
+    <script type="text/javascript" src="js/anime.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <![endif]-->
+    <!--[if !(IE)|(gte IE 9)]><!-->
+</head>
+    
+<body class="seguros">
+    
+    <div id="btnMenuModal">
+        <div class="container">
+            <button type="button" data-toggle="modal" data-target="#menuModal" data-direction="left">
+                <span class="burger-box"><span class="burger-inner"></span></span>
+            </button>
+        </div>
+    </div>
+    
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <div id="headerLeft" class="left">
+                <a href="index.html"><span id="fulllogo" class="ic-ablogo"></span>
+                <div id="smalllogo">
+                    <span class="ic-lettera"></span>
+                    <span class="ic-letterb"></span>
+                </div>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="">Dinheiro</a></li>
+                    <li><a href="">Ser Ativo</a></li>
+                    <li><a href="suporte.html">Quer ajuda?</a></li>
+                </ul>
+            </nav>
+            <div id="headerRight" class="right">
+                <span class="searchbtn ic-search" data-toggle="modal" data-target="#searchModal"></span>
+                <a href="login.html"><button id="btnLogin" class="white blue" type="button">Login</button></a>
+                <a href="conta.html"><button id="btnConta" class="border white" type="button">Abrir Conta</button></a>
+                <a href="lock.html"><span id="btnLock" class="ic-lock"></span></a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- MAIN CONTENT -->
+    
+    <section id="segurosHeader">
+        <div id="seg_phElements">
+            <img id="seg_ph01" class="phElem" src="assets/pageHeader/circle_purple01.svg">
+            <img id="seg_ph02" class="phElem" src="assets/pageHeader/triangle_white01.svg">
+            <img id="seg_ph03" class="phElem" src="assets/pageHeader/square_blue01.svg">
+            <img id="seg_ph04" class="phElem" src="assets/pageHeader/circle_blue02.svg">
+            <img id="seg_ph05" class="phElem" src="assets/pageHeader/square_blue01.svg">
+            <img id="seg_ph06" class="phElem" src="assets/pageHeader/circle_white02.svg">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Seguro Gadget</h1>
+                    <p>Saiba como proteger melhor todos os seus equipamentos</p>
+                    <button data-toggle="modal" data-target="#seguroSimulacao" type="button" class="fill blue">Simule agora</button>
+                </div>
+            </div>
+        </div>
+        <aside id="segurosHeaderImg">
+            <img src="assets/seguros/segurosMorphHeader01.svg">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1001px" height="802px" viewBox="0 0 1001 802">
+                <path id="seguros01" fill="#E9D3F0" fill-rule="evenodd" d="M987.08453,456.80178 C1019.21164,641.267278 1000.3886,763.793462 871.556591,796.106947 C742.724579,828.420432 498.345619,707.483285 375.754495,679.791889 C253.163379,652.1005 26.8282196,587.856786 2.88772984,423.456516 C-21.0527599,259.056245 115.969681,121.170086 244.248404,57.5389479 C372.527126,-6.09218961 587.316048,-34.4032549 736.345185,66.1181673 C885.374322,166.63959 954.957417,272.336282 987.08453,456.80178 Z"/>
+            </svg>
+            <img class="segImg_mobile" src="assets/seguros/segurosImg_m.svg">
+        </aside>
+    </section>
+    
+    <section id="segurosCoberturas">
+        <div class="container">
+            <div class="sectionHeading">
+                <h2>Nós simplificamos a sua <span class="purple">cobertura</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="bullet">
+                        <span class="ic-danger"></span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="110px" height="107px" viewBox="0 0 110 107">
+                            <defs>
+                                <linearGradient x1="23.8457895%" y1="-57.4584996%" x2="37.524244%" y2="96.5675717%" id="linearGradient-1">
+                                    <stop stop-color="#004772" offset="0%"></stop>
+                                    <stop stop-color="#009EFF" offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <path id="CobBullet01" fill="url(#linearGradient-1)" fill-rule="nonzero" d="M23.9060479,92.5382641 C5.91218915,79.084408 -3.35586549,66.3878038 2.47739848,51.4421634 C8.31066245,36.496523 35.0307486,24.4088809 45.6018278,15.4024072 C56.1729071,6.39593358 78.1955871,-7.16821798 93.9186208,5.26148638 C109.641654,17.6911907 110.951776,40.931539 107.845905,58.6201774 C104.740034,76.3088157 92.8188395,98.9450441 74.2243923,103.927411 C55.6299452,108.909778 41.8999066,105.99212 23.9060479,92.5382641 Z"/>
+                        </svg>
+                    </div>
+                    <h6>Roubo ou furto</h6>
+                    <p>Se não reaver o seu telemóvel, nós cobrimos o valor do seu</p>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="bullet">
+                        <span class="ic-drop"></span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="106px" height="110px" viewBox="0 0 106 110">
+                            <defs>
+                                <linearGradient x1="13.0194101%" y1="-46.3824215%" x2="37.524244%" y2="96.5675717%" id="linearGradient-2">
+                                    <stop stop-color="#004772" offset="0%"></stop>
+                                    <stop stop-color="#009EFF" offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <path id="CobBullet02" fill="url(#linearGradient-2)" fill-rule="nonzero" d="M76.1543323,8.06637731 C96.3847099,17.839658 107.905111,28.5345616 105.030783,44.3186477 C102.156455,60.1027339 78.2337228,77.0667247 69.5753803,87.9247811 C60.9170377,98.7828375 41.8871384,116.299903 24.0812818,107.098663 C6.27542511,97.897424 0.554906858,75.3340494 0.228563039,57.377773 C-0.09778078,39.4214966 7.28519151,14.9264884 24.5873258,6.48767361 C41.8894601,-1.95114115 55.9239546,-1.70690343 76.1543323,8.06637731 Z"/>
+                        </svg>
+                    </div>
+                    <h6>Derrame de líquidos</h6>
+                    <p>Maior parte das vezes conseguimos solucionar este problema</p>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="bullet">
+                        <span class="ic-lightning"></span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="113px" height="101px" viewBox="0 0 113 101">
+                            <defs>
+                                <linearGradient x1="21.3062913%" y1="-51.2519208%" x2="37.524244%" y2="96.5675717%" id="linearGradient-3">
+                                    <stop stop-color="#004772" offset="0%"></stop>
+                                    <stop stop-color="#009EFF" offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <path id="CobBullet03" fill="url(#linearGradient-3)" fill-rule="nonzero" d="M1.42958935,40.1056239 C4.08404112,17.7955571 10.4455955,3.42088426 26.3055318,0.999818843 C42.165468,-1.42124658 65.9937162,15.6752057 79.0790908,20.3267921 C92.1644655,24.9783784 114.922705,37.268503 112.019782,57.0999018 C109.11686,76.9313006 89.6451882,89.6860731 72.7734425,95.840629 C55.9016968,101.995185 30.3375508,102.989242 16.7254708,89.377162 C3.11339075,75.765082 -1.22486242,62.4156907 1.42958935,40.1056239 Z"/>
+                        </svg>
+                    </div>
+                    <h6>Curto-circuito</h6>
+                    <p>Não se preocupe que nós resolvemos estes casos</p>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="bullet">
+                        <span class="ic-airplane"></span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="108px" height="108px" viewBox="0 0 108 108">
+                            <defs>
+                                <linearGradient x1="-8.23018739%" y1="-53.6903659%" x2="37.524244%" y2="96.5675717%" id="linearGradient-4">
+                                    <stop stop-color="#004772" offset="0%"></stop>
+                                    <stop stop-color="#009EFF" offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <path id="CobBullet04" fill="url(#linearGradient-4)" fill-rule="nonzero" d="M11.5231586,25.6704307 C19.0878906,13.4755859 35.7082227,-3.34923789 51.0243642,1.42726137 C66.3405057,6.20376063 80.2626019,32.0155667 89.9845375,41.9326355 C99.706473,51.8497042 114.773808,72.8725508 103.471165,89.4243363 C92.1685218,105.976122 69.0761753,108.904217 51.213971,107.039808 C33.3517666,105.1754 7.34357029,95.8594238 3.67178515,76.6606689 C-2.74447132e-13,57.4619141 3.95842666,37.8652755 11.5231586,25.6704307 Z"/>
+                        </svg>
+                    </div>
+                    <h6>Viagens Internacionais</h6>
+                    <p>Viagens em lazer ou trabalho, durante 90 dias você está protegido</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="segurosCapital">
+        <div class="container">
+            <div class="sectionHeading">
+                <h2><span class="blue">Proteja</span> o seu gadget<br>a partir de 35€</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="row">
+                <div class="offset-lg-2 col-lg-8">
+                    <div id="segCapBoard">
+                        <h6>Capital Seguro</h6>
+                        <table>
+                            <tr>
+                                <td>Igual ou inferior a 500€</td>
+                                <td>35€</td>
+                            </tr>
+                            <tr>
+                                <td>Superior a 500€ e igual ou inferior a 700€</td>
+                                <td>45€</td>
+                            </tr>
+                            <tr>
+                                <td>Superior a 700€ e igual ou inferior a 1.000€</td>
+                                <td>55€</td>
+                            </tr>
+                            <tr>
+                                <td>Superior a 1.000€ e igual ou inferior a 1.500€</td>
+                                <td>70€</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <aside>
+                        <span class="ic-lamp"></span>
+                        <p>Franquia de 10% dos prejuízos indemnizáveis</p>
+                        <p>No 1º recibo acresce o custo da apólice no valor de 5,65€ (inclui encargos legais)</p>
+                    </aside>
+                </div>
+            </div>
+            <a href=""><button class="fill blue">Pedir agora</button></a>
+        </div>
+    </section>
+    
+    <aside id="segurosFaq">
+        <div class="container">
+            <div class="sectionHeading">
+                <h2><span class="purple">Faq's</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="row">
+                <div class="offset-lg-1 col-lg-10">
+                    <div class="supFaqs">
+                        <div class="supFaq">
+                            <table>
+                                <tr>
+                                    <td><h6>Porque devo usar o vosso seguro?</h6></td>
+                                    <td><span class="ic-dropdown"></span></td>
+                                </tr>
+                            </table>
+                            <div class="faqContainer">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                        <div class="supFaq">
+                            <table>
+                                <tr>
+                                    <td><h6>Se pagar anualmente vou usufruir de desconto?</h6></td>
+                                    <td><span class="ic-dropdown"></span></td>
+                                </tr>
+                            </table>
+                            <div class="faqContainer">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                        <div class="supFaq">
+                            <table>
+                                <tr>
+                                    <td><h6>Comprei um telemóvel em segunda mão, posso fazer seguro desse telemóvel?</h6></td>
+                                    <td><span class="ic-dropdown"></span></td>
+                                </tr>
+                            </table>
+                            <div class="faqContainer">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                        <div class="supFaq">
+                            <table>
+                                <tr>
+                                    <td><h6>O que posso fazer para pedir este seguro?</h6></td>
+                                    <td><span class="ic-dropdown"></span></td>
+                                </tr>
+                            </table>
+                            <div class="faqContainer">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small>Se não encontra a sua pergunta, contacte-nos através do <a href="suporte.html">Help Center</a></small>
+                </div>
+            </div>
+        </div>
+    </aside>
+    
+    <footer class="footerCurve">
+        <aside>
+            <div class="btnWrap">
+                <a href="https://www.google.pt"><button type="button" class="fill blue">Abrir conta</button></a>
+            </div>
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="4000px" height="45px" viewBox="0 0 4000 45">
+                <path id="footer01" fill="#000000" fill-rule="evenodd" d="M0,45 L0,14.2905405 C0,14.2905405 469.8,17.4324324 625,16.4189189 C788.9,15.3040541 1029.4,8.31081081 1164.2,7.90540541 C1284.9,7.5 1406.3,17.9391892 1607.2,18.75 C1709.3,19.1554054 1852.8,0 1877.1,0 C1901.4,0 1907.2,11.5540541 1908.1,19.1554054 C1909.4,30 1923.3,43.4797297 1941.2,44.0878378 C1949.3,44.3918919 1981.6,44.2905405 2004.3,44.2905405 C2026.2,44.2905405 2052.2,44.3918919 2059.3,44.0878378 C2069.9,43.5810811 2080.6,36.8918919 2089.7,25.8445946 C2107.2,4.66216216 2160.8,1.72297297 2224.5,2.02702703 C2399.5,2.83783784 2718.3,13.277027 2868.8,8.00675676 C3207.9,-3.64864865 4000,20.6756757 4000,20.6756757 L4000,45 L0,45 Z"/>
+            </svg>
+        </aside>
+        <section>
+            <div class="container">
+                <div id="topMenu">
+                    <aside>
+                        <a href="">
+                            <span class="ic-lettera"></span>
+                            <span class="ic-letterb"></span>
+                        </a>
+                    </aside>
+                    <nav>
+                        <ul>
+                            <li><a href="">Empreendedores</a></li>
+                            <li><a href="">ActivoBank</a></li>
+                            <li><a href="">Pontos Activo</a></li>
+                            <li><a href="">As nossas Apps</a></li>
+                        </ul>
+                    </nav>
+                    <aside>
+                        <a href=""><span class="ic-facebook"></span></a>
+                        <a href=""><span class="ic-twitter"></span></a>
+                        <a href=""><span class="ic-google"></span></a>
+                        <a href=""><span class="ic-instagram"></span></a>
+                    </aside>
+                </div>
+                <div id="bottomMenu">
+                    <nav>
+                        <ul>
+                            <li><a href="suporte.html">Suporte</a></li>
+                            <li><a href="">Informação Legal</a></li>
+                            <li><a href="">FAQ</a></li>
+                            <li><a href="">Preçário</a></li>
+                            <li><a href="">Contactos</a></li>
+                        </ul>
+                    </nav>
+                    <aside><a href="" class="active">PT</a><a href="">EN</a></aside>
+                </div>
+                <div id="mb-footer-mobile">
+                    <aside id="mb-redes">
+                        <a href=""><span class="ic-facebook"></span></a>
+                        <a href=""><span class="ic-twitter"></span></a>
+                        <a href=""><span class="ic-google"></span></a>
+                        <a href=""><span class="ic-instagram"></span></a>
+                    </aside>
+                    <aside id="mb-language"><a href="" class="active">PT</a><a href="">EN</a></aside>
+                </div>
+                <p>© 2018 Banco ActivoBank, S.A.</p>
+            </div>
+        </section>
+    </footer>
+    
+    <!-- SEARCH MODAL -->
+    
+    <div id="searchModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="container">
+                    <div id="searchHeader" class="row">
+                        <div class="offset-md-1 col-md-10">
+                            <span class="ic-cross" data-dismiss="modal"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="offset-md-1 col-md-10">
+                            <input id="searchInput" type="search" placeholder="Começa a escrever para pesquisar">
+                            <aside class="searchSugestions">
+                                <p>Sugestões de Pesquisa</p>
+                                <a href=""><button type="button" class="btnSearch white small">Cartões</button></a>
+                                <a href=""><button type="button" class="btnSearch white small">Crédito Habitação</button></a>
+                                <a href=""><button type="button" class="btnSearch white small">Domiciliação ordenado</button></a>
+                                <a href=""><button type="button" class="btnSearch white small">Poupanças</button></a>
+                                <a href=""><button type="button" class="btnSearch white small">Seguros</button></a>
+                                <a href=""><button type="button" class="btnSearch white small">Crédito Pessoal</button></a>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- MENU MODAL -->
+    
+    <div id="menuModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div id="menuHeader" class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <span data-dismiss="modal"></span>
+                        </div>
+                    </div>
+                </div>
+                <div id="menuContent" class="container">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <nav class="mainNav">
+                                <ul>
+                                    <li><a href="">Cartões</a></li>
+                                    <li class="active"><a href="">Crédito Habitação</a></li>
+                                    <li><a href="">Crédito Pessoal</a></li>
+                                    <li><a href="">Seguros</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col-md-4">
+                            <nav class="secondNav">
+                                <ul>
+                                    <li><a href="">Dinheiro</a></li>
+                                    <li><a href="">Ser Activo</a></li>
+                                    <li><a href="">Quer ajuda?</a></li>
+                                    <li><a href="">Contactos</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div id="languageModal" class="languageModal" tabindex="1">PT
+                        <ul class="dropdown">
+                            <li><a href="#">EN</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <aside>
+                    <p>Segue-nos</p>
+                    <a href=""><span class="ic-facebook"></span></a>
+                    <a href=""><span class="ic-instagram"></span></a>
+                    <a href=""><span class="ic-twitter"></span></a>
+                    <a href=""><span class="ic-linkedin"></span></a>
+                </aside>
+                <img src="assets/menuShape.svg">
+            </div>
+        </div>
+    </div>
+    
+    <!-- SIMULACAO MODAL -->
+    
+    <div id="seguroSimulacao" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div id="simHeader" class="container">
+                    <span class="ic-cross" data-dismiss="modal"></span>
+                </div>
+                <div id="simContent">
+                    <h6>Seguro Gadget</h6>
+                    <div class="simFrase">
+                        <p>O meu telemóvel é um</p>
+                        <div class="select-wrapper">
+                            <select>
+                                <option>marca</option>
+                                <option>Samsung</option>
+                                <option>iPhone</option>
+                                <option>Huawei</option>
+                            </select>
+                        </div>
+                        <div class="select-wrapper">
+                            <select>
+                                <option>modelo</option>
+                                <option>6S</option>
+                                <option>P20</option>
+                                <option>P10 Lite</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="simFrase">
+                        <p>que tem</p>
+                        <div class="select-wrapper">
+                            <select id="gigas">
+                                <option>GB</option>
+                                <option>8 GB</option>
+                                <option>16 GB</option>
+                                <option>32 GB</option>
+                            </select>
+                        </div>
+                        <p>de memória.</p>
+                    </div>
+                    <small>Preencha a seguinte frase para calcularmos o seguro do seu gadget.</small>
+                    <a href=""><button class="border white">Calcular</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="js/functions.js"></script>
+    <script type="text/javascript">
+        
+        anime({
+            targets: '#seguros01',
+            d: ['M987.08453,456.80178 C1019.21164,641.267278 1000.3886,763.793462 871.556591,796.106947 C742.724579,828.420432 498.345619,707.483285 375.754495,679.791889 C253.163379,652.1005 26.8282196,587.856786 2.88772984,423.456516 C-21.0527599,259.056245 115.969681,121.170086 244.248404,57.5389479 C372.527126,-6.09218961 587.316048,-34.4032549 736.345185,66.1181673 C885.374322,166.63959 954.957417,272.336282 987.08453,456.80178 Z', 'M987.08453,456.80178 C1019.21164,641.267278 953.620995,790.213894 871.556591,796.106947 C789.492188,802 507.260587,679.791889 375.754495,679.791889 C244.248404,679.791889 26.8282196,587.856786 2.88772984,423.456516 C-21.0527599,259.056245 115.969681,121.170086 244.248404,57.5389479 C372.527126,-6.09218961 560.120058,-8.08397791 736.345185,66.1181673 C912.570312,140.320312 954.957417,272.336282 987.08453,456.80178 Z'],
+            duration: 10000,
+            easing: 'easeInQuad',
+            direction: 'alternate',
+            loop: true,
+            autoplay: true
+        });
+        
+        anime({
+            targets: '#CobBullet01',
+            d: ['M23.9060479,92.5382641 C5.91218915,79.084408 -3.35586549,66.3878038 2.47739848,51.4421634 C8.31066245,36.496523 35.0307486,24.4088809 45.6018278,15.4024072 C56.1729071,6.39593358 78.1955871,-7.16821798 93.9186208,5.26148638 C109.641654,17.6911907 110.951776,40.931539 107.845905,58.6201774 C104.740034,76.3088157 92.8188395,98.9450441 74.2243923,103.927411 C55.6299452,108.909778 41.8999066,105.99212 23.9060479,92.5382641 Z', 'M23.9060479,92.5382641 C8.65527344,85.2402344 1.87114265,68.8564453 2.47739848,51.4421634 C3.08365431,34.0278816 36.3310547,23.3408203 45.6018278,15.4024072 C54.8726009,7.46399419 81.3017578,-3.61035156 93.9186208,5.26148638 C106.535484,14.1333243 107.691809,39.4337141 107.845905,58.6201774 C108,77.8066406 101.988281,102.181641 74.2243923,103.927411 C46.4605034,105.673182 39.1568223,99.8362937 23.9060479,92.5382641 Z'],
+            duration: 4000,
+            easing: 'easeInQuad',
+            direction: 'alternate',
+            loop: true,
+            autoplay: true
+        });
+        
+        anime({
+            targets: '#CobBullet02',
+            d: ['M76.1543323,8.06637731 C96.3847099,17.839658 107.905111,28.5345616 105.030783,44.3186477 C102.156455,60.1027339 78.2337228,77.0667247 69.5753803,87.9247811 C60.9170377,98.7828375 41.8871384,116.299903 24.0812818,107.098663 C6.27542511,97.897424 0.554906858,75.3340494 0.228563039,57.377773 C-0.09778078,39.4214966 7.28519151,14.9264884 24.5873258,6.48767361 C41.8894601,-1.95114115 55.9239546,-1.70690343 76.1543323,8.06637731 Z', 'M76.1543323,8.06637731 C96.3847099,17.839658 106.778362,27.638272 105.030783,44.3186477 C103.283203,60.9990234 76.1543323,69.6826172 69.5753803,87.9247811 C62.9964283,106.166945 43.3402979,112.025452 24.0812818,107.098663 C4.82226563,102.171875 2.21185006,75.4152608 1.88550624,57.4589844 C1.55916243,39.502708 6.72347978,11.26148 24.5873258,6.48767361 C42.4511719,1.71386719 55.9239546,-1.70690343 76.1543323,8.06637731 Z'],
+            duration: 4000,
+            easing: 'easeInQuad',
+            direction: 'alternate',
+            loop: true,
+            autoplay: true
+        });
+        
+        anime({
+            targets: '#CobBullet03',
+            d: ['M1.42958935,40.1056239 C4.08404112,17.7955571 10.4455955,3.42088426 26.3055318,0.999818843 C42.165468,-1.42124658 65.9937162,15.6752057 79.0790908,20.3267921 C92.1644655,24.9783784 114.922705,37.268503 112.019782,57.0999018 C109.11686,76.9313006 89.6451882,89.6860731 72.7734425,95.840629 C55.9016968,101.995185 30.3375508,102.989242 16.7254708,89.377162 C3.11339075,75.765082 -1.22486242,62.4156907 1.42958935,40.1056239 Z', 'M1.42958935,40.1056239 C2.44017266,16.4072266 10.4455955,3.42088426 26.3055318,0.999818843 C42.165468,-1.42124658 55.0644317,16.6760451 79.0790908,20.3267921 C103.09375,23.9775391 112.019782,35.8183594 112.019782,57.0999018 C112.019782,78.3814442 107.848763,86.9619141 72.7734425,95.840629 C37.6981216,104.719344 27.2732072,95.6283475 16.7254708,89.377162 C6.17773437,83.1259766 0.419006036,63.8040213 1.42958935,40.1056239 Z'],
+            duration: 4000,
+            easing: 'easeInQuad',
+            direction: 'alternate',
+            loop: true,
+            autoplay: true
+        });
+        
+        anime({
+            targets: '#CobBullet04',
+            d: ['M11.5231586,25.6704307 C19.0878906,13.4755859 35.7082227,-3.34923789 51.0243642,1.42726137 C66.3405057,6.20376063 80.2626019,32.0155667 89.9845375,41.9326355 C99.706473,51.8497042 114.773808,72.8725508 103.471165,89.4243363 C92.1685218,105.976122 69.0761753,108.904217 51.213971,107.039808 C33.3517666,105.1754 7.34357029,95.8594238 3.67178515,76.6606689 C-2.74447132e-13,57.4619141 3.95842666,37.8652755 11.5231586,25.6704307 Z', 'M11.5231586,25.6704307 C19.0878906,13.4755859 35.7082227,-3.34923789 51.0243642,1.42726137 C66.3405057,6.20376063 80.2626019,32.0155667 89.9845375,41.9326355 C99.706473,51.8497042 114.773808,72.8725508 103.471165,89.4243363 C92.1685218,105.976122 69.0761753,108.904217 51.213971,107.039808 C33.3517666,105.1754 7.34357029,95.8594238 3.67178515,76.6606689 C-2.74447132e-13,57.4619141 3.95842666,37.8652755 11.5231586,25.6704307 Z'],
+            duration: 4000,
+            easing: 'easeInQuad',
+            direction: 'alternate',
+            loop: true,
+            autoplay: true
+        });
+        
+        $(document).ready( function(){
+            
+            /* OPEN MENU MODAL ANIMATION */
+            
+            $('#btnMenuModal button').click( function(){
+                $(this).toggleClass('is-active');
+            });
+            $('#menuModal').on("hide.bs.modal", function() {
+                $('#btnMenuModal button').removeClass('is-active');
+            })
+            
+            /* INPUT FOCUS - SEARCH MODAL */
+            
+            $('#searchModal').on('shown.bs.modal', function (e){
+                $('#searchInput').focus();
+            })
+        });
+    </script>
+    
+</body>
+    
+</html>

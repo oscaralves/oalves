@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'ab';
-  src:  url('fonts/ab.eot?fsjlig');
-  src:  url('fonts/ab.eot?fsjlig#iefix') format('embedded-opentype'),
-    url('fonts/ab.ttf?fsjlig') format('truetype'),
-    url('fonts/ab.woff?fsjlig') format('woff'),
-    url('fonts/ab.svg?fsjlig#ab') format('svg');
+  src:  url('fonts/ab.eot?vohxu0');
+  src:  url('fonts/ab.eot?vohxu0#iefix') format('embedded-opentype'),
+    url('fonts/ab.ttf?vohxu0') format('truetype'),
+    url('fonts/ab.woff?vohxu0') format('woff'),
+    url('fonts/ab.svg?vohxu0#ab') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +24,27 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.ic-contactless:before {
+  content: "\e927";
+}
+.ic-transf02:before {
+  content: "\e928";
+}
+.ic-transf01:before {
+  content: "\e929";
+}
+.ic-drop:before {
+  content: "\e923";
+}
+.ic-danger:before {
+  content: "\e924";
+}
+.ic-lightning:before {
+  content: "\e925";
+}
+.ic-airplane:before {
+  content: "\e926";
+}
 .ic-dropdownRight:before {
   content: "\e922";
 }

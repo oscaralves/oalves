@@ -34,3 +34,14 @@ $(function() {
     });
 
 });
+
+$(document).ready( function(){
+    
+    /* OPEN FAQS ACCORDION */
+            
+    $('.supFaq table').click( function(){
+        $(this).siblings('.faqContainer').fadeToggle();
+        $(this).find('span').toggleClass('open');
+    });
+    
+});

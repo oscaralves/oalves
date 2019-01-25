@@ -37,6 +37,20 @@
     #s_phElements img:nth-child(3){right:22%;}
     #suporteHeader #suporteSearch button.white{margin:0 7px 10px 0;}
     #suporteCategories h2, #suporteVideos{margin-top:150px;}
+    
+    #seguroSimulacao #simHeader{margin-top:50px;}
+    #seguroSimulacao #simContent{width:960px;}
+    #segurosCapital #segCapBoard table tr td:first-child{font-size:19px;}
+    #segurosCapital #segCapBoard table tr td{padding-bottom:40px;}
+    #segurosCapital aside p{font-size:13px;}
+    #segurosCoberturas .container .row > div h6{font-size:17px;}
+    #segurosHeaderImg img{width:80%;}
+    #segurosHeaderImg svg{top:-60px;width:80%;}
+    #segurosHeader{min-height:720px;}
+    
+    #cartoesHeader aside.ccredito_desktop img{width:40%;}
+    #cartoesDownload .appDownloadText{max-width:55%;}
+    #cartoesDownload .appDownloadText h5{margin-bottom:5px;}
         
 }
 
@@ -126,6 +140,41 @@
     
     #suporteHeader.collapsed #suporteSearch h2{font-size:28px;line-height:32px;}
     #suporteHeader.collapsed #suporteSearch input[type="search"]{width:100%;width:calc(100% - 90px);}
+    
+    #seguroSimulacao #simHeader{margin-top:30px;}
+    #seguroSimulacao #simContent{width:720px;}
+    #seguroSimulacao .simFrase{font-size:25px;}
+    #seguroSimulacao .simFrase select{min-width:185px;}
+    #segurosHeaderImg img{width:60%;}
+    #segurosHeaderImg svg{width:60%;top:-190px;}
+    #segurosHeader .container .row > div{margin-top:130px;}
+    #segurosHeader{min-height:500px;}
+    #seg_phElements img:nth-child(2){top:21%;}
+    #seg_phElements img:nth-child(6){top:29%;}
+    #seg_phElements img:nth-child(5){top:22%;left:15px;}
+    #segurosCoberturas .container .row > div{margin-bottom:30px;}
+    
+    #cartoesHeader{padding-top:200px;}
+    #cartoesHeader aside.ccredito_desktop{right:-145px;}
+    #cartoesHeader aside.ccredito_desktop img{width:30%;}
+    #cartoesHeader aside.ccredito_desktop img:nth-child(1){margin-left:-40px;}
+    #cartoesExtras{margin-top:150px;padding-bottom:100px;}
+    #cartoesExtras .container .row > div:first-child h4, #cartoesExtras .container .row:nth-of-type(even) > div:last-child h4{font-size:30px;line-height:38px;}
+    #cartoesExtras .container .row > div:first-child p, #cartoesExtras .container .row:nth-of-type(even) > div:last-child p{font-size:19px;}
+    #cartoesExtras .container .row > div:last-child img, #cartoesExtras .container .row:nth-of-type(even) > div:first-child img{width:100%;}
+    #cartoesDesconto{margin-top:0;}
+    #cartoesDesconto .container .row:first-child > div:last-child img{width:100%;}
+    #cartoesDesconto .container .row:first-child > div h6{font-size:20px;line-height:25px;}
+    #cartoesDesconto .container .row:first-child > div p{font-size:17px;line-height:22px;}
+    #cartoesDesconto .container .row:last-child > div img{width:9%;margin:0 10px;}
+    #cartoesApp{padding:50px 0 80px 0;}
+    #cartoesApp .container .row > div:first-child h5{margin:0 0 70px 0;font-size:40px;line-height:43px;}
+    #cartoesApp .cartoesAppBullets{margin-bottom:60px;}
+    #cartoesApp .cartoesAppBullets h6{font-size:20px;}
+    #cartoesApp .cartoesAppBullets p{font-size:17px;line-height:21px;}
+    #cartoesApp .container .row > div:last-child img{max-width:100%;}
+    #cartoesPerguntas{padding-bottom:30px;}
+    #cartoesOpcoes{padding:100px 0;}
         
 }
 
@@ -203,7 +252,9 @@
     #pageHeaderCurve,
     .phElem,
     #credito_desktop,
-    #suporteNav{
+    #suporteNav,
+    #segurosHeaderImg img,
+    #segurosHeaderImg svg{
         display:none;
     }
     
@@ -431,7 +482,7 @@
     #testemunhosCarousel .carousel-item p:last-child{font-size:16px;margin-top:40px;}
     #final .sectionContent{transform:none;}
     
-    footer#footerHome{position:static;}
+    footer.footerCurve{position:static;}
     footer > section .container > div ul li{display:block;}
     footer #topMenu nav{width:100%;}
     footer > section #topMenu ul li{margin:25px 0;font-size:16px;}
@@ -543,17 +594,96 @@
         font-size:20px;
     }
     .suporteCatDrop .dropdown li.activo a{color:#000000;}
-    .suporteCatDrop.active .dropdown {
+    .suporteCatDrop.active .dropdown{
         border-bottom:1px solid #000000;
         max-height:1000px;
         padding:20px 0;
     }
+    
+    #suporteResposta{font-size:16px;}
+    #suporteResposta .suporteMain h4{font-size:24px;line-height:30px;}
+    #suporteResposta .suportePassos{margin-bottom:80px;}
+    #suporteResposta .suportePassos h6{font-size:20px;}
+    #suporteResposta .suporteShare{text-align:center;}
+    #suporteResposta .suporteUseful{padding:40px 0;}
+    #suporteResposta .suporteUseful .usefulButtons > div{width:49%;}
+    #suporteResposta .suporteMain{margin-bottom:60px;}
+    
+    #suporteResultados .suporteListaResult .supResult h6{font-size:18px;}
+    
+    body.seguros #btnMenuModal button .burger-inner, body.seguros #btnMenuModal button .burger-inner::before, body.seguros #btnMenuModal button .burger-inner::after{background-color:#ffffff;}
+    #seguroSimulacao #simContent{width:540px;}
+    #seguroSimulacao #simHeader span{font-size:22px;}
+    #seguroSimulacao h6{margin-bottom:20px;}
+    #seguroSimulacao .simFrase{font-size:20px;}
+    #seguroSimulacao .simFrase select{min-width:130px;}
+    #seguroSimulacao .simFrase .select-wrapper{margin:0 10px;}
+    #segurosHeader .container{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        z-index: 1000;
+    }
+    #segurosHeader .container .row > div{text-align:center;color:#ffffff;margin:0;}
+    #segurosHeader .container .row{margin:0;}
+    #segurosHeaderImg img.segImg_mobile{display:block;width:100%;position:static;}
+    
+    #cartoesHeader{padding-top:150px;text-align:center;}
+    #cartoesHeader button{margin-top:250px;}
+    #cartoesHeader aside{
+        top:350px;
+        left:50%;
+        width:668px;
+        height:291px;
+        transform:translateX(-50%);
+    }
+    #cartoesHeader aside img:nth-child(1), #cartoesHeader aside img:nth-child(2){display:none;}
+    #cartoesHeader aside img:nth-child(3){display:block;}
+    #cartoesExtras{margin-top:100px;}
+    #cartoesDesconto{padding-top:60px;}
+    #cartoesDesconto .container{padding-top:60px;text-align:center;padding-bottom:60px;}
+    #cartoesDesconto .container .row:first-child > div:last-child img{width:80%;margin-top:60px;}
+    #cartoesDesconto .container .row:last-child{margin-top:70px;}
+    #cartoesDesconto .container .row:last-child > div img{width:13%;margin:10px;}
+    #cartoesApp .container .row > div:first-child h5{font-size:32px;line-height:37px;text-align:center;margin-top:40px;}
+    #cartoesApp .container .row > div:last-child{text-align:center;overflow-y:hidden;height:280px;}
+    #cartoesDownload .appDownContainer{height:auto;padding:30px 15px;}
+    #cartoesDownload .appDownloadText{
+        position:static;
+        text-align:center;
+        transform:none;
+        max-width:100%;
+        margin-bottom:25px;
+    }
+    #cartoesDownload .appDownloadBtn{position:static;text-align:center;transform:none;}
+    body.cartoes footer{margin-top:60px;}
+    #cartoesExtras .container{padding:0;max-width:100%;}
+    #cartoesExtras .container .row{margin:0 0 70px 0;}
+    #cartoesExtras .container .row:nth-child(odd) > div:last-child, #cartoesExtras .container .row:nth-child(even) > div:first-child{display:none;}
+    #cartoesExtras .container .row:nth-child(odd) > div:first-child, #cartoesExtras .container .row:nth-child(even) > div:last-child{
+        background-position:right -30px center;
+        background-repeat:no-repeat;
+        background-size:contain;
+        padding:0;
+    }
+    #cartoesExtras .container .row:nth-child(even) > div:last-child{background-position:left -30px center;}
+    #ccredito_1{background-image:url('../assets/cartoes/cDiamond.svg');}
+    #ccredito_2{background-image:url('../assets/cartoes/cPizza.svg');}
+    #ccredito_3{background-image:url('../assets/cartoes/cPopcorn.svg');}
+    #cartoesExtras .container .row > div:first-child h4, #cartoesExtras .container .row:nth-of-type(even) > div:last-child h4{padding:0 20px;font-size:22px;line-height:29px;}
+    #cartoesExtras .container .row > div:first-child p, #cartoesExtras .container .row:nth-of-type(even) > div:last-child p{padding:0 20px;font-size:16px;line-height:22px;}
     
 }
 
 @media all and (max-width: 575px){
     
     footer{margin-top:100px;}
+    
+    .supFaqs .supFaq{padding:20px;}
+    .supFaq h6{font-size:16px;line-height:20px;}
+    .supFaq span{font-size:20px;}
+    .faqContainer p{font-size:14px;line-height:20px;padding:30px 0 0 0;}
     
     #headerRight{margin-right:10px;}
     #btnMenuModal button{left:30px;}
@@ -589,6 +719,32 @@
     #suporteQuickLinks .container .row > div{margin-bottom:60px;}
     #suporteCategories h2, #suporteVideos{margin:40px 0 80px 0;}
     
+    #seguroSimulacao #simContent{width:100%;padding:0 15px;}
+    #seguroSimulacao #simHeader{margin-top:15px;}
+    #seguroSimulacao .simFrase .select-wrapper{display:block;margin:10px 0;}
+    #segurosHeader h1{font-size:30px;}
+    #segurosHeader p{font-size:18px;line-height:22px;margin-bottom:30px;}
+    #segurosCoberturas{margin:30px 0 70px 0;}
+    #segurosCoberturas .sectionHeading, #segurosCapital .sectionHeading{margin:0;}
+    #segurosCoberturas .container .row{margin-top:70px;}
+    #segurosCapital{padding:80px 0 70px 0;}
+    #segurosCapital #segCapBoard{margin:50px 0;padding:40px 20px 0 20px;}
+    #segurosCapital #segCapBoard h6{font-size:24px;}
+    #segurosCapital #segCapBoard table tr td{padding-bottom:30px;}
+    #segurosCapital #segCapBoard table tr td:first-child{font-size:17px;width:80%;line-height:20px;}
+    #segurosCapital #segCapBoard table tr td:last-child{font-size:23px;width:15%;padding-left:5%;}
+    #segurosCapital aside p{line-height:17px;text-align:left;margin-bottom:10px;}
+    #segurosFaq{padding-top:100px;}
+    #segurosFaq small{font-size:16px;line-height:20px;}
+    
+    #cartoesHeader aside{top:375px;}
+    #cartoesDesconto{padding:50px 15px 40px 15px;}
+    #cartoesDesconto .container{padding-top:40px;}
+    #cartoesDesconto .container .row:last-child > div img{width:20%;margin:10px 5px;}
+    #cartoesApp{padding:40px 0;}
+    #cartoesPerguntas{padding:60px 0 30px 0;}
+    #cartoesOpcoes{padding:50px 0;}
+    
 }
 
 @media all and (max-width: 480px){
@@ -597,10 +753,12 @@
     
 }
 
+@media all and (max-width: 420px){#cartoesHeader aside{top:400px;}#cartoesHeader button{margin-top:220px;}}
+
 
 @media all and (max-width: 767px) and (max-height: 640px){
     
-    #menuModal .modal-content{max-height:480px;}
+    #menuModal .modal-content{max-height:100vh;}
     #menuModal .modal-content .mainNav ul li{font-size:20px !important;margin-bottom:15px;}
     #menuModal .modal-content nav{margin-bottom:25px !important;}
     #menuModal .modal-content .secondNav ul li{font-size:15px;margin-bottom:15px;}

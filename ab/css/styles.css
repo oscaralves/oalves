@@ -79,6 +79,16 @@ h2{
 .modal-content{background-clip:border-box;border:none;border-radius:0;border-bottom:solid 1px #444444;}
 .modal-backdrop.show{opacity:0.7;}
 
+.bullet span{   
+    position: absolute;
+    left: 0;
+    right: 0;
+    color: #ffffff;
+    font-size:30px;
+    top:50%;
+    transform:translateY(-50%);
+}
+
 .appdltxt_mobile,
 #mb-footer-mobile,
 #fpCartoes_m,
@@ -89,10 +99,36 @@ h2{
 #logo_mobile,
 #credito_mobile,
 #btn_oqsaber,
-#suporteNav_m{
+#suporteNav_m,
+.segImg_mobile{
     display:none;
 }
 
+/************************ FAQS ACCORDION ************************/
+
+.supFaqs .supFaq{
+    margin-bottom:15px;
+    border-radius:10px;
+    padding:20px 40px;
+}
+.supFaq table{cursor:pointer;width:100%;}
+.supFaq table tr td:first-child{width:90%}
+.supFaq table tr td:last-child{width:10%;vertical-align:middle;text-align:right;}
+.supFaq h6{font-size:24px;line-height:29px;}
+.supFaq span{
+    font-size:26px;
+    -webkit-transition: transform 0.3s ease-in-out;
+    -moz-transition: transform 0.3s ease-in-out;
+    -o-transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+}
+.supFaq span.open{transform:rotate(-180deg);}
+.faqContainer{display:none;}
+.faqContainer p{
+    font-size:20px;
+    line-height:25px;
+    padding:50px 0;
+}
 
 /************************ CARDS ************************/
 
@@ -586,7 +622,7 @@ body.body-dark header #headerRight #btnConta{
 
 /************************ FOOTER ************************/
 
-footer{width:100%;position:relative;margin-top:200px;}
+footer{width:100%;position:relative;margin-top:160px;}
 footer .btnWrap{
     position:absolute;
     left:0;
@@ -837,6 +873,13 @@ footer > section .container > p{color:#ffffff;font-size:14px;margin-top:20px;}
 #s_phElements img:nth-child(4){left:22%;top:32%;}
 #s_phElements img:nth-child(5){left:-40px;width:80px;opacity:0.2;bottom:27%;}
 
+#seg_phElements img:nth-child(1){z-index:20;right:40%;bottom:30%;}
+#seg_phElements img:nth-child(2){z-index:20;top:36%;right:40%;}
+#seg_phElements img:nth-child(3){z-index:20;top:50%;transform:translateY(-50%);right:51%;opacity:0.25;}
+#seg_phElements img:nth-child(4){left:32%;bottom:12%;}
+#seg_phElements img:nth-child(5){top:30%;left:50px;}
+#seg_phElements img:nth-child(6){right:-85px;top:50%;z-index:20;width:150px;}
+
 /************************************************************************************/
 /*********************************************************** HOMEPAGE SETTINGS ***********************************************************/
 /************************************************************************************/
@@ -998,15 +1041,6 @@ footer > section .container > p{color:#ffffff;font-size:14px;margin-top:20px;}
 }
 .habBullets{position:relative;height:80px;margin-bottom:5rem;}
 .habBullets .bullet{position:absolute;left:0;}
-.habBullets .bullet span{   
-    position: absolute;
-    left: 0;
-    right: 0;
-    color: #ffffff;
-    font-size:30px;
-    top:50%;
-    transform:translateY(-50%);
-}
 .habBullets .bulletText{
     text-align:left;
     position:absolute;
@@ -1346,11 +1380,10 @@ input[type='range']::-webkit-slider-thumb{
 
 /************************ FOOTER HOMEPAGE ************************/
 
-
-#footerHome{position:absolute;bottom:0;margin-top:0;}
-footer#footerHome > section{padding:40px 0 25px 0;}
-footer#footerHome > aside{position:relative;height:5.5rem;text-align:center;}
-footer#footerHome > aside .btnWrap{
+#footerHome.footerCurve{position:absolute;bottom:0;margin-top:0;}
+footer.footerCurve > section{padding:40px 0 25px 0;}
+footer.footerCurve > aside{position:relative;height:70px;text-align:center;overflow-x:hidden;}
+footer.footerCurve > aside .btnWrap{
     position:absolute;
     left:0;
     right:0;
@@ -1358,13 +1391,14 @@ footer#footerHome > aside .btnWrap{
     bottom:10px;
     z-index:15;
 }
-footer#footerHome > aside svg{
+footer.footerCurve > aside svg{
     position:absolute;
     bottom:-1px;
     left:50%;
     transform:translateX(-50%);
     z-index:10;
 }
+footer.footerCurve .btnWrap button{border:none;}
 
 /************************************************************************************/
 /*********************************************************** SUPPORT SETTINGS ***********************************************************/
@@ -1475,7 +1509,7 @@ footer#footerHome > aside svg{
 #suporteVideos .container .row > div:last-child a span{vertical-align:middle;margin-left:5px;}
 
 #suporteBreadcrumb{margin:80px 0;position:relative;z-index:1000;}
-#suporteBreadcrumb p{font-weight:700;font-size:14px;}
+#suporteBreadcrumb p{font-weight:700;font-size:14px;line-height:19px;}
 #suporteBreadcrumb a{color:#E0119D;font-weight:500;}
 #suporteBreadcrumb span{font-size:10px;margin:0 6px;}
 
@@ -1491,9 +1525,9 @@ footer#footerHome > aside svg{
 }
 #suporteListaRep ul li{color:#303133;font-size:18px;margin-bottom:30px;}
 
-#suporteResposta{color:#303133;font-size:18px;}
+#suporteResposta{color:#303133;font-size:18px;position:relative;z-index:1000;}
 #suporteResposta .suporteMain{margin-bottom:100px;}
-#suporteResposta .suporteMain h4{font-size:40px;margin-bottom:10px;font-weight:700;}
+#suporteResposta .suporteMain h4{font-size:40px;line-height:45px;margin-bottom:10px;font-weight:700;}
 #suporteResposta .suporteMain small{color:#B0B8C1;}
 #suporteResposta .suporteMain p{margin-top:35px;line-height:23px;}
 #suporteResposta .suporteMain a{color:#E0119D;font-weight:700;}
@@ -1541,3 +1575,350 @@ footer#footerHome > aside svg{
 #suporteResposta .suporteRelated{margin-top:40px;}
 #suporteResposta .suporteRelated h6{margin-bottom:30px;text-transform:uppercase;color:#000000;}
 #suporteResposta .suporteRelated ul li{margin-bottom:20px;color:#617283;font-size:16px;}
+
+#suporteResultados{color:#303133;}
+#suporteResultados .suporteListaResult h4{font-size:26px;font-weight:700;margin-bottom:35px;}
+#suporteResultados .suporteListaResult h4 span{color:#E0119D;}
+#suporteResultados .suporteListaResult .supResult{
+    color:#3B495B;
+    border-bottom:solid 1px #F0F1F3;
+    padding-bottom:35px;
+    margin-bottom:40px;
+}
+#suporteResultados .suporteListaResult .supResult h6{font-size:20px;margin-bottom:10px;font-weight:500;}
+#suporteResultados .suporteListaResult .supResult small{font-size:14px;color:#AAB1B9;}
+#suporteResultados .suporteListaResult .supResult small span{font-size:8px;margin:0 8px;vertical-align:middle;}
+#suporteResultados .suporteListaResult .supResult small span.dot{vertical-align:sub;font-size:25px;}
+#suporteResultados .suporteListaResult .supResult p{margin-top:25px;font-size:16px;line-height:22px;}
+#suporteResultados .suporteListaResult .supResult p span{color:#ffffff;background-color:#009eff;font-style:italic;}
+#suporteResultados .suportePagination{margin-top:70px;text-align:center;font-size:16px;}
+#suporteResultados .suportePagination ul li{display:inline-block;margin:0 12px;}
+#suporteResultados .suportePagination ul li.activo{
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    background-color:#009eff;
+    padding:8px;
+    color:#ffffff;
+    margin:0 8px;
+}
+
+
+/************************************************************************************/
+/*********************************************************** SEGUROS SETTINGS ***********************************************************/
+/************************************************************************************/
+
+body.seguros #btnMenuModal button .burger-inner, body.seguros #btnMenuModal button .burger-inner::before, body.seguros #btnMenuModal button .burger-inner::after{background-color:#000000;}
+body.seguros #headerLeft #fulllogo, body.seguros #headerLeft #smalllogo, body.seguros header nav ul li{color:#000000;}
+body.seguros.modal-open #btnMenuModal button .burger-inner, body.seguros.modal-open #btnMenuModal button .burger-inner::before, body.seguros.modal-open #btnMenuModal button .burger-inner::after{background-color:#ffffff;}
+body.seguros header button.white.blue{color:#8F23B3;}
+
+#segurosHeader{min-height:815px;position:relative;}
+#segurosHeader .container .row{width:100%;}
+#segurosHeader .container .row > div{margin-top:350px;z-index:200;}
+#segurosHeader h1{
+    font-size:6.5rem;
+    font-family:'Simple', sans-serif;
+    text-transform:uppercase;
+    margin-bottom:2rem;
+}
+#segurosHeader p{font-size:24px;margin-bottom:50px;line-height:34px;}
+#segurosHeader button{-webkit-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.25);}
+
+#segurosHeaderImg img{position:absolute;top:0;right:0;z-index:15;}
+#segurosHeaderImg svg{position:absolute;top:50px;right:-150px;z-index:10;}
+
+#segurosCoberturas{margin:100px 0 140px 0;}
+#segurosCoberturas .container .row{margin-top:100px;}
+#segurosCoberturas .container .row > div{text-align:center;}
+#segurosCoberturas .container .row .bullet{position:relative;}
+#segurosCoberturas .container .row .bullet span{font-size:40px;}
+#segurosCoberturas .container .row > div:nth-child(1) .bullet span{left:8px;}
+#segurosCoberturas .container .row > div:nth-child(2) .bullet span{left:-10px;}
+#segurosCoberturas .container .row > div:nth-child(3) .bullet span{left:-3px;top:55px;}
+#segurosCoberturas .container .row > div:nth-child(4) .bullet span{left:-3px;top:59px;}
+#segurosCoberturas .container .row > div h6{font-size:20px;font-weight:700;margin:25px 0 15px 0;}
+#segurosCoberturas .container .row > div p{font-size:14px;line-height:20px;}
+
+#segurosCapital{background-color:#F8F8F8;padding:100px 0 80px 0;text-align:center;}
+#segurosCapital #segCapBoard{
+    background:#8F23B3 url('../assets/seguros/bgCapital.svg') left -50px center no-repeat;
+    background-size:contain;
+    padding:40px 40px 0 40px;
+    text-align:left;
+    border-radius:10px;
+    margin:80px 0 40px 0;
+    -webkit-box-shadow: 0px 4px 10px 0px rgba(0,57,93,0.25);
+    -moz-box-shadow: 0px 4px 10px 0px rgba(0,57,93,0.25);
+    box-shadow: 0px 4px 10px 0px rgba(0,57,93,0.25);
+}
+#segurosCapital #segCapBoard h6{
+    color:#ffffff;
+    font-size:30px;
+    position:relative;
+    font-weight:700;
+    margin-bottom:50px;
+}
+#segurosCapital #segCapBoard h6:after{
+    position:absolute;
+    content:'';
+    background-color:#82309D;
+    width:50px;
+    height:4px;
+    bottom:-20px;
+    left:0;
+}
+#segurosCapital #segCapBoard table{width:100%;}
+#segurosCapital #segCapBoard table tr td{color:#ffffff;padding-bottom:50px;}
+#segurosCapital #segCapBoard table tr td:first-child{font-size:24px;width:85%;}
+#segurosCapital #segCapBoard table tr td:last-child{
+    font-size:30px;
+    width:15%;
+    font-weight:700;
+    text-align:right;
+}
+#segurosCapital  aside{
+    color:#617283;
+    width:100%;
+    margin-bottom:80px;
+}
+#segurosCapital  aside span{
+    font-size:47px;
+    float:left;
+    margin-right:10px;
+    line-height:60px;
+}
+#segurosCapital  aside p{
+    display:table;
+    font-size:16px;
+    font-weight:500;
+    line-height:30px;
+}
+
+#segurosFaq{padding-top:120px;}
+#segurosFaq .container .row > div{text-align:center;}
+#segurosFaq .sectionHeading{margin-bottom:85px;}
+#segurosFaq .supFaqs{margin-bottom:60px;}
+#segurosFaq .supFaqs .supFaq{
+    -webkit-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.1);
+    text-align:left;
+}
+#segurosFaq small{color:#AAB1B9;font-size:20px;line-height:25px;}
+#segurosFaq small a{font-weight:500;text-decoration:underline;}
+#segurosFaq .supFaq span{color:#CCD1D5;}
+
+#seguroSimulacao{z-index:10000;}
+#seguroSimulacao .modal-dialog{
+    background:#8f23b3 url('../assets/seguros/bgSimulacao.png') left -100px center no-repeat;
+    background-size:cover;
+    width:100%;
+    max-width:100%;
+    height:100vh;
+    color:#ffffff;
+    position:relative
+}
+#seguroSimulacao .modal-content{
+    background:transparent;
+    border:none;
+    height:100vh;
+}
+#seguroSimulacao #simHeader{text-align:right;margin-top:100px;}
+#seguroSimulacao #simHeader span{font-size:32px;cursor:pointer;}
+#seguroSimulacao #simContent{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translateX(-50%) translateY(-50%);
+    width:1140px;
+}
+#seguroSimulacao h6{font-size:18px;text-transform:uppercase;margin-bottom:40px;}
+#seguroSimulacao .simFrase{margin-bottom:25px;font-size:30px;}
+#seguroSimulacao .simFrase p{font-weight:700;display:inline;}
+#seguroSimulacao .simFrase .select-wrapper{
+    position:relative;
+    display:inline;
+    margin:0 15px;
+    padding-bottom:10px;
+}
+#seguroSimulacao .simFrase .select-wrapper:before{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:1px;
+    background-color:#ffffff;
+    content:'';
+}
+#seguroSimulacao .simFrase select{
+    background:transparent;
+    border:none;
+    color:#ffffff;
+    min-width:200px;
+}
+#seguroSimulacao .simFrase select#gigas{min-width:100px;}
+#seguroSimulacao small{
+    font-size:16px;
+    display:block;
+    margin:30px 0 60px 0;
+    line-height:20px;
+}
+
+
+/************************************************************************************/
+/*********************************************************** CARTOES SETTINGS ***********************************************************/
+/************************************************************************************/
+
+body.cartoes{background-color:#000000;color:#ffffff;}
+body.cartoes header button.white.blue{color:#000000;}
+
+#cartoesHeader{padding-top:300px;position:relative;}
+#cartoesHeader h1{
+    font-size:6.5rem;
+    font-family:'Simple', sans-serif;
+    text-transform:uppercase;
+    margin-bottom:2rem;
+}
+#cartoesHeader p{font-size:24px;margin-bottom:50px;line-height:34px;}
+#cartoesHeader aside{position:absolute;right:-220px;top:50%;}
+#cartoesHeader aside img{float:right}
+#cartoesHeader aside img:nth-child(1){transform:rotate(25deg);margin-top:130px;}
+#cartoesHeader aside img:nth-child(2){transform:rotate(-22deg);}
+#cartoesHeader aside img:nth-child(3){display:none;}
+
+#cartoesExtras{margin-top:250px;}
+#cartoesExtras .container .row{margin-bottom:150px;}
+#cartoesExtras .container .row:last-child{margin-bottom:0;}
+#cartoesExtras .container .row > div:first-child h4, #cartoesExtras .container .row:nth-of-type(even) > div:last-child h4{
+    font-size:40px;
+    line-height:45px;
+    margin-bottom:20px;
+    font-weight:700;
+    margin-top:30px;
+}
+#cartoesExtras .container .row > div:first-child p, #cartoesExtras .container .row:nth-of-type(even) > div:last-child p{font-size:22px;line-height:26px;}
+#cartoesExtras .container .row > div:last-child{text-align:center;}
+#cartoesExtras .container .row:nth-of-type(even) > div:last-child{text-align:right;}
+
+#cartoesDesconto{background-color:#ffffff;margin-top:-10px;padding:100px 0 50px 0;}
+#cartoesDesconto .container{
+    background-color:#000000;
+    padding-top:100px;
+    padding-bottom:100px;
+    border-radius:25px;
+}
+#cartoesDesconto .container .row:first-child > div h6{
+    font-size:28px;
+    line-height:32px;
+    font-weight:700;
+    margin:20px 0;
+}
+#cartoesDesconto .container .row:first-child > div p{font-size:20px;line-height:24px;}
+#cartoesDesconto .container .row:last-child{margin-top:120px;text-align:center;}
+#cartoesDesconto .container .row:last-child > div p{font-size:20px;margin-bottom:50px;}
+#cartoesDesconto .container .row:last-child > div img{margin:0 20px;}
+
+#cartoesApp{background-color:#ffffff;padding:100px 0 200px 0;color:#000000;}
+#cartoesApp .container .row > div:first-child h5{
+    font-size:44px;
+    line-height:48px;
+    margin:80px 0 100px 0;
+    font-weight:700;
+}
+#cartoesApp .container .row > div:first-child h5 span{color:#009EFF;}
+#cartoesApp .container .row > div:last-child{text-align:right;}
+#cartoesApp .cartoesAppBullets{margin-bottom:80px;}
+#cartoesApp .cartoesAppBullets span{
+    color:#ffffff;
+    background-color:#000000;
+    border-radius:50%;
+    padding:15px;
+    font-size:28px;
+}
+#cartoesApp .cartoesAppBullets h6{
+    font-size:26px;
+    line-height:30px;
+    font-weight:700;
+    margin:30px 0 5px 0;
+}
+#cartoesApp .cartoesAppBullets p{font-size:20px;line-height:24px;}
+
+#cartoesPerguntas{padding:120px 0 80px 0;}
+#cartoesPerguntas h2{color:#ffffff;}
+#cartoesPerguntas .sectionHeading p{margin-top:5px;}
+#cartoesPerguntas .container .row > div{text-align:center;}
+#cartoesPerguntas .supFaqs{margin:70px 0 60px 0;}
+#cartoesPerguntas .supFaqs .supFaq{border:solid 1px #ffffff;text-align:left;}
+#cartoesPerguntas .supFaq span{color:#5c5c5c;}
+#cartoesPerguntas small{color:#ffffff;font-size:20px;line-height:25px;}
+#cartoesPerguntas small a{font-weight:500;text-decoration:underline;}
+
+#cartoesDownload{margin-top:80px;}
+#cartoesDownload .appDownContainer{
+    width:100%;
+    height:150px;
+    position:relative;
+    border-radius:10px;
+}
+#cartoesDownload .appDownContainer#cCreditoDownload{background: linear-gradient(to right, #009eff, #8f23b3);}
+#cartoesDownload .appDownContainer#cBoostDownload{background: linear-gradient(to right, #e0119d, #ff7900);}
+#cartoesDownload .appDownloadText{
+    color:#ffffff;
+    position:absolute;
+    left:50px;
+    top:50%;
+    transform:translateY(-50%);
+    max-width:60%;
+}
+#cartoesDownload .appDownloadText h5{font-size:22px;line-height:27px;margin-bottom:15px;font-weight:700;}
+#cartoesDownload .appDownloadText p{font-size:16px;line-height:20px;font-weight:300;}
+#cartoesDownload .appDownloadBtn{
+    position:absolute;
+    right:50px;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+#cartoesOpcoes{background-color:#ffffff;padding:200px 0;}
+#cartoesOpcoes .sectionHeading p{color:#000000;}
+#cartoesOpcoes .container{margin-top:80px;}
+#cartoesOpcoes .cartOpcao{
+    height:180px;
+    width:100%;
+    border-radius:10px;
+    position:relative;
+    background-repeat:no-repeat;
+    margin-bottom:30px;
+}
+#cartoesOpcoes .cartOpcao .cartOpcaoText{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    text-align:center;
+    margin:0 20px;
+}
+#cartoesOpcoes .cartOpcao .cartOpcaoText h6{font-size:22px;line-height:26px;font-weight:700;}
+#cartoesOpcoes .cartOpcao .cartOpcaoText p{font-size:16px;line-height:22px;margin-top:15px;}
+#cartoesOpcoes .cartOpcao#cartOpc1{
+    background-color:#8F23B3;
+    background-image:url('../assets/cartoes/copcao_mesada.svg');
+    background-position:right -15px bottom -5px;
+}
+#cartoesOpcoes .cartOpcao#cartOpc2{
+    background-color:#FF7900;
+    background-image:url('../assets/cartoes/copcao_domesticas.svg');
+    background-position:right 10px bottom -40px;
+}
+#cartoesOpcoes .cartOpcao#cartOpc3{
+    background-color:#E0119D;
+    background-image:url('../assets/cartoes/copcao_compras.svg');
+    background-position:left -15px bottom 15px;
+}
+#cartoesOpcoes .cartOpcao#cartOpc4{
+    background-color:#009EFF;
+    background-image:url('../assets/cartoes/copcao_estrangeiro.svg');
+    background-position:left -15px bottom;
+}
+

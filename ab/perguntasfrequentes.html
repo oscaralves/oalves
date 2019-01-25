@@ -271,7 +271,7 @@
                                 <ul>
                                     <li><a href="">Dinheiro</a></li>
                                     <li><a href="">Ser Activo</a></li>
-                                    <li><a href="">Quer ajuda?</a></li>
+                                    <li><a href="suporte.html">Quer ajuda?</a></li>
                                     <li><a href="">Contactos</a></li>
                                 </ul>
                             </nav>
@@ -298,33 +298,7 @@
     <script type="text/javascript" src="js/functions.js"></script>
     <script type="text/javascript">
         
-         anime({
-            targets: '#questao01',
-            d: ['M43.363405,170.295483 C10.2867945,145.518973 2.35577152,120.814769 13.0625,93.3125 C23.7692285,65.8102308 63.7493677,44.9140984 83.1672225,28.3466808 C102.585077,11.7792632 141.087331,-6.27445632 169.990234,16.6152344 C198.893137,39.5049251 203.275159,75.3869001 197.582555,107.939868 C191.889952,140.492836 174.321149,175.827965 140.15625,184.982422 C105.991351,194.136879 76.4400156,195.071993 43.363405,170.295483 Z', 'M43.363405,170.295483 C10.2867945,145.518973 -6.75469918,122.143433 3.95202929,94.6411636 C14.6587578,67.1388944 63.7493677,44.9140984 83.1672225,28.3466808 C102.585077,11.7792632 143.042532,-13.1669271 171.945435,9.72276361 C200.848338,32.6124543 203.275159,75.3869001 197.582555,107.939868 C191.889952,140.492836 170.002481,182.144396 135.837582,191.298853 C101.672683,200.453311 76.4400156,195.071993 43.363405,170.295483 Z'],
-            duration: 10000,
-            easing: 'easeInQuad',
-            direction: 'alternate',
-            loop: true,
-            autoplay: true
-        });
-        
-        /* VIDEO CONTROLS */
-        
-        var video = document.getElementById("supVideo"); 
-        var image = document.getElementById("supImg"); 
-
-        function playvideo(){
-            video.play();
-            video.setAttribute("controls","controls");
-            image.style.display = 'none';
-        } 
-        
         $(document).ready( function(){
-            
-            $('#suporteCategories .suporteCat h6').click( function(){
-                $(this).siblings('ul').fadeToggle();
-                $(this).children('span').toggleClass('open');
-            });
             
             /* OPEN MENU MODAL ANIMATION */
             

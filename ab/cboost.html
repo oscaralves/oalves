@@ -5,7 +5,7 @@
     <meta charset="UTF-8"/> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Suporte | Next 2.0 - ActivoBank</title>
+    <title>Cartão Boost | Next 2.0 - ActivoBank</title>
     <!-- @Googlefonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
     <!-- @Stylesheets -->
@@ -18,14 +18,13 @@
     <!-- @Scripts -->
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/anime.min.js"></script>
     <!--[if lt IE 9]>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <![endif]-->
     <!--[if !(IE)|(gte IE 9)]><!-->
 </head>
     
-<body>
+<body class="cartoes">
     
     <div id="btnMenuModal">
         <div class="container">
@@ -50,7 +49,7 @@
                 <ul>
                     <li><a href="">Dinheiro</a></li>
                     <li><a href="">Ser Ativo</a></li>
-                    <li class="activo"><a href="suporte.html">Quer ajuda?</a></li>
+                    <li><a href="suporte.html">Quer ajuda?</a></li>
                 </ul>
             </nav>
             <div id="headerRight" class="right">
@@ -64,138 +63,192 @@
     
     <!-- MAIN CONTENT -->
     
-    <section id="suporteHeader" class="collapsed">
-        <div id="s_phElements">
-            <img id="s_ph01" class="phElem" src="assets/pageHeader/circle_purple01.svg">
-            <img id="s_ph02" class="phElem" src="assets/pageHeader/circle_white02.svg">
-            <img id="s_ph03" class="phElem" src="assets/pageHeader/square_blue01.svg">
-            <img id="s_ph04" class="phElem" src="assets/pageHeader/square_white02.svg">
-            <img id="s_ph05" class="phElem" src="assets/pageHeader/square_blue01.svg">
-        </div>
+    <section id="cartoesHeader">
         <div class="container">
-            <div id="suporteSearch" class="row">
-                <div class="col-md-7">
-                    <h2>Como podemos simplificar?</h2>
-                    <input id="suporteInput" type="search" placeholder="Escreva a sua pesquisa">
-                    <a href=""><button type="button" class="btnSearch white small">Abertura Conta</button></a>
-                    <a href=""><button type="button" class="btnSearch white small">Cartões</button></a>
-                    <a href=""><button type="button" class="btnSearch white small">Pagamentos</button></a>
-                    <a href=""><button type="button" class="btnSearch white small">Conta</button></a>
+            <div class="row">
+                <div class="col-md-7 col-lg-6">
+                    <h1>Dê um boost à sua vida</h1>
+                    <p>Carregue com quanto quiser, use onde quiser</p>
+                    <a href=""><button class="fill magenta">Pedir Cartão</button></a>
                 </div>
-                <div id="suporteLinks" class="col-md-5">
-                    <div class="supLink">
-                        <span class="ic-phone"></span>
-                        <a href=""><p>+351 210 030 700</p></a>
-                    </div>
-                    <div class="supLink">
-                        <span class="ic-email"></span>
-                        <a href=""><p>apoioclientes@activobank.pt</p></a>
-                    </div>
-                    <div class="supLink">
-                        <a href=""><span class="ic-chat"></span>
-                        <p>Chat Activo</p></a>
+            </div>
+        </div>
+        <aside>
+            <img src="assets/cartoes/ccredito.svg">
+            <img src="assets/cartoes/ccredito.svg">
+            <img src="assets/cartoes/ccredito_mob.svg">
+        </aside>
+    </section>
+    
+    <section id="cartoesExtras">
+        <div class="container">
+            <div class="row">
+                <div id="cboost_1" class="col-md-8 col-lg-6">
+                    <h4>Lorem ipsum dolor sit amet, consectetur</h4>
+                    <p>Pague em prestações fixas. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="col-md-4 col-lg-6"><img src="assets/cartoes/cDiscount_color.svg"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-lg-6"><img src="assets/cartoes/cPopcorn2_color.svg"></div>
+                <div id="cboost_2" class="col-md-8 col-lg-6">
+                    <h4>Ao comprar um bilhete de cinema, nós oferecemos o segundo.</h4>
+                    <p>Promoção válida para bilhetes de cinema NOS a preço normal e para a mesma sessão do filme escolhido.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="cartoesDesconto">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 offset-lg-1 col-lg-6">
+                    <h6>Oferecemos um vale de desconto por cada 10€ que gastar com o seu cartão.</h6>
+                    <p>Pode trocar os seus pontos por descontos em várias lojas, como a Fnac, a Galp ou a Zara e muito mais.</p>
+                </div>
+                <div class="col-md-5 col-lg-4"><img src="assets/cartoes/cPontos2.svg"></div>
+            </div>
+            <div class="row">
+                <div class="offset-xl-1 col-xl-10">
+                    <p>Parceiros exclusivos</p>
+                    <div id="cartoesParceiros">
+                        <img src="assets/cartoes/ikea.png">
+                        <img src="assets/cartoes/nos.png">
+                        <img src="assets/cartoes/fnac.png">
+                        <img src="assets/cartoes/zara.png">
+                        <img src="assets/cartoes/galp.png">
+                        <img src="assets/cartoes/elcorteingles.png">
+                        <img src="assets/cartoes/toysrus.png">
                     </div>
                 </div>
             </div>
         </div>
     </section>
     
-    <nav id="suporteNav_m">
-        <div class="container">
-            <div id="suporteCatDrop" class="suporteCatDrop" tabindex="1">Categorias
-                <ul class="dropdown">
-                    <li><a href="perguntasfrequentes.html">Abrir Conta</a></li>
-                    <li><a href="perguntasfrequentes.html">Pagamentos</a></li>
-                    <li><a href="perguntasfrequentes.html">Transferências</a></li>
-                    <li class="activo"><a href="perguntasfrequentes.html">Cartões</a></li>
-                    <li><a href="perguntasfrequentes.html">Investimentos</a></li>
-                    <li><a href="perguntasfrequentes.html">Seguros</a></li>
-                    <li><a href="perguntasfrequentes.html">Apps</a></li>
-                </ul>
-            </div>
+    <section id="cartoesOpcoes">
+        <div class="sectionHeading">
+            <h2>Nunca ter tantas opções pareceu tão bem</h2>
+            <p>Mauris in justo eget quam semper pharetra at nec sem.<br>Maecenas velit tortor.</p>
         </div>
-    </nav>
-    
-    <aside id="suporteBreadcrumb">
         <div class="container">
             <div class="row">
-                <div class="offset-md-3 col-md-9">
-                    <p><a href="perguntasfrequentes.html">Perguntas Frequentes</a> <span class="ic-dropdownRight"></span> <a href="perguntasfrequentes.html">Cartões</a> <span class="ic-dropdownRight"></span> O meu cartão não está a funcionar</p>
+                <div class="col-md-6 offset-lg-2 col-lg-4">
+                    <div id="cartOpc1" class="cartOpcao">
+                        <div class="cartOpcaoText">
+                            <h6>Mesada do filho</h6>
+                            <p>Praesent bibendum nisi lectus, quis sollicitudin magna imperdiet at.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div id="cartOpc2" class="cartOpcao">
+                        <div class="cartOpcaoText">
+                            <h6>Compras domésticas</h6>
+                            <p>Praesent bibendum nisi lectus, quis sollicitudin magna imperdiet at.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 offset-lg-2 col-lg-4">
+                    <div id="cartOpc3" class="cartOpcao">
+                        <div class="cartOpcaoText">
+                            <h6>Compras online</h6>
+                            <p>Praesent bibendum nisi lectus, quis sollicitudin magna imperdiet at.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div id="cartOpc4" class="cartOpcao">
+                        <div class="cartOpcaoText">
+                            <h6>Uso no estrangeiro</h6>
+                            <p>Praesent bibendum nisi lectus, quis sollicitudin magna imperdiet at.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="cartoesPerguntas">
+        <div class="sectionHeading">
+            <h2>Perguntas Frequentes</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="offset-lg-1 col-lg-10">
+                    <div class="supFaqs">
+                        <div class="supFaq">
+                            <table>
+                                <tr>
+                                    <td><h6>Perdi o meu cartão. Como o posso recuperar?</h6></td>
+                                    <td><span class="ic-dropdown"></span></td>
+                                </tr>
+                            </table>
+                            <div class="faqContainer">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                        <div class="supFaq">
+                            <table>
+                                <tr>
+                                    <td><h6>Posso aumentar o meu limite de crédito?</h6></td>
+                                    <td><span class="ic-dropdown"></span></td>
+                                </tr>
+                            </table>
+                            <div class="faqContainer">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                        <div class="supFaq">
+                            <table>
+                                <tr>
+                                    <td><h6>Para usufruir do cinema tenho de carregar o cartão?</h6></td>
+                                    <td><span class="ic-dropdown"></span></td>
+                                </tr>
+                            </table>
+                            <div class="faqContainer">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                        <div class="supFaq">
+                            <table>
+                                <tr>
+                                    <td><h6>Como peço o cartão de crédito?</h6></td>
+                                    <td><span class="ic-dropdown"></span></td>
+                                </tr>
+                            </table>
+                            <div class="faqContainer">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small>Se não encontra a sua pergunta, contacte-nos através do <a href="suporte.html">Help Center</a></small>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <aside id="cartoesDownload">
+        <div class="container">
+            <div class="row">
+                <div class="offset-lg-1 col-lg-10">
+                    <div id="cBoostDownload" class="appDownContainer">
+                        <div class="appDownloadText">
+                            <h5>100% grátis para quem é 100% digital.</h5>
+                            <p>Duis ultricies nulla leo, vestibulum nisi vulputate ac. Proin eget nisi luctus.</p>
+                        </div>
+                        <div class="appDownloadBtn">
+                            <a href=""><button type="button" class="white magenta">Download agora</button></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </aside>
     
-    <section id="suportePerguntas">
-        <div class="container">
-            <div class="row">
-                <div id="suporteNav" class="col-md-3">
-                    <ul>
-                        <li><a href="perguntasfrequentes.html">Abrir Conta</a></li>
-                        <li><a href="perguntasfrequentes.html">Pagamentos</a></li>
-                        <li><a href="perguntasfrequentes.html">Transferências</a></li>
-                        <li class="activo"><a href="perguntasfrequentes.html">Cartões</a></li>
-                        <li><a href="perguntasfrequentes.html">Investimentos</a></li>
-                        <li><a href="perguntasfrequentes.html">Seguros</a></li>
-                        <li><a href="perguntasfrequentes.html">Apps</a></li>
-                    </ul>
-                </div>
-                <div id="suporteResposta" class="col-md-9">
-                    <div class="suporteMain">
-                        <h4>O meu cartão está perdido ou roubado</h4>
-                        <small>Última actualização: 10 Outubro, 2018</small>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet mi mi, a bibendum turpis rutrum eget. Nunc et magna sed tellus mattis tincidunt. Donec consequat venenatis cursus. Vivamus luctus sed sapien vel porta.<br><br>Sed in <a href="">metus ligula</a>. Phasellus egestas quis justo vitae molestie. Duis vitae metus dolor.<br>Phasellus et dictum lorem, et interdum erat.<br><br>Quisque augue urna, pulvinar at velit non, ultricies <a href="">malesuada enim</a>.</p>
-                    </div>
-                    <div class="suportePassos">
-                        <h6>Siga os seguintes passos:</h6>
-                        <ul>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                            <li>Sed in metus ligula. Phasellus egestas quis justo vitae molestie. Duis vitae metus dolor. Phasellus et dictum lorem, et interdum erat.</li>
-                            <li>Quisque augue urna, pulvinar at velit non, ultricies malesuada enim.</li>
-                        </ul>
-                    </div>
-                    <div class="suporteRespFooter">
-                        <div class="suporteShare">
-                            <a href=""><span class="ic-facebook"></span></a>
-                            <a href=""><span class="ic-instagram"></span></a>
-                            <a href=""><span class="ic-twitter"></span></a>
-                            <a href=""><span class="ic-linkedin"></span></a>
-                        </div>
-                        <div class="suporteUseful">
-                            <p>Este artigo foi útil?</p>
-                            <div class="usefulButtons">
-                                <div class="leftUseful">
-                                    <img src="assets/suporte/util.svg">
-                                    <p>Sim, simplificou</p>
-                                </div>
-                                <div class="rightUseful">
-                                    <img src="assets/suporte/inutil.svg">
-                                    <p>Não, por simplificar</p>
-                                </div>
-                                
-                            </div>
-                            <p>Não respondemos à sua questão? <a href="">Fale connosco</a></p>
-                        </div>
-                    </div>
-                    <div class="suporteRelated">
-                        <h6>Artigos relacionados</h6>
-                        <ul>
-                            <li><a href="resposta.html">O meu cartão está perdido ou roubado</a></li>
-                            <li><a href="resposta.html">O meu cartão está comprometido</a></li>
-                            <li><a href="resposta.html">O meu cartão foi engolido pela ATM</a></li>
-                            <li><a href="resposta.html">O meu cartão está perdido ou roubado</a></li>
-                            <li><a href="resposta.html">O meu cartão está comprometido</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
     <footer>
-        <div class="btnWrap">
-            <a href="https://www.google.pt"><button type="button" class="fill magenta">Abrir conta</button></a>
-        </div>
         <section>
             <div class="container">
                 <div id="topMenu">
