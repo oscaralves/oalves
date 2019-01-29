@@ -44,4 +44,30 @@ $(document).ready( function(){
         $(this).find('span').toggleClass('open');
     });
     
+    /* BANNER COOKIES */
+    
+    $('#cookies #cookiesMain .cmHeader span').click( function(){
+        $('#cookies #cookiesPreferences').fadeIn();
+        $(this).addClass('open');
+    });
+    
+    $('#cookies #cookiesMain button').click( function(){
+        $('#cookies').fadeOut();
+    });
+    
+    /* OPEN MENU MODAL */
+    
+    $('#btnMenuModal button').click( function(){
+        $(this).toggleClass('is-active');
+    });
+    $('#menuModal').on("hide.bs.modal", function() {
+        $('#btnMenuModal button').removeClass('is-active');
+    })
+
+    /* INPUT FOCUS - SEARCH MODAL */
+
+    $('#searchModal').on('shown.bs.modal', function (e) {
+        $('#searchInput').focus();
+    });
+    
 });

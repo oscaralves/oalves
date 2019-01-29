@@ -1,3 +1,11 @@
+@media all and (max-width: 1599px){
+    
+    #notfound .nfImg img#ntBalloon{right:24%;}
+    #notfound .nfImg img#ntBirds{left:31%;}
+    #notfound .nfImg img#ntCloud4{left:9%;}
+    #notfound .nfImg img#ntCloud1{right:9%;}
+    
+}
 
 @media all and (max-width: 1199px){
     
@@ -51,6 +59,21 @@
     #cartoesHeader aside.ccredito_desktop img{width:40%;}
     #cartoesDownload .appDownloadText{max-width:55%;}
     #cartoesDownload .appDownloadText h5{margin-bottom:5px;}
+    
+    #notfound .nfImg img#ntBalloon{top:25%;right:19%;}
+    #notfound .nfImg img#ntBirds{left:26%;}
+    #notfound .nfImg img#ntCloud1{right:11%;}
+    
+    #cookies{width:960px;}
+    #cookies #cookiesPreferences .cpCol .cpRow .cpRowInput label.radiocheck{padding-top:3px;}
+    
+    #logout #lgBanner .lgBannerText{width:240px;}
+    #logout #lgBanner h6{font-size:21px;}
+    #logout #lgBanner p{font-size:13px;}
+    #logout #lgBanner{background-position:right -20px center;}
+    
+    #loginLeft{width:55%;}
+    #loginRight{width:45%;}
         
 }
 
@@ -175,6 +198,21 @@
     #cartoesApp .container .row > div:last-child img{max-width:100%;}
     #cartoesPerguntas{padding-bottom:30px;}
     #cartoesOpcoes{padding:100px 0;}
+    
+    #notfound .nfImg img#ntBalloon{right:13%;}
+    #notfound .nfImg img#ntBirds{left:19%;}
+    #notfound .nfImg img#ntCloud1{right:13%;}
+    #notfound .nfImg img#ntCloud4{left:13%;}
+    #notfound .nfImg img#ntCloud5{left:26%;}
+    
+    #cookies{width:720px;}
+    #cookies #cookiesMain .cmHeader{font-size:14px;}
+    
+    #loginRight, #loginLeft{padding:0 20px;}
+    #loginRight .loginRightContent{width:100%;}
+    #loginRight .loginRightContent .lrcText h4{font-size:20px;line-height:25px;}
+    #loginRight .loginRightContent .lrcText p{font-size:14px;line-height:19px;}
+    #loginLeft p{font-size:13px;line-height:17px;}
         
 }
 
@@ -674,6 +712,22 @@
     #cartoesExtras .container .row > div:first-child h4, #cartoesExtras .container .row:nth-of-type(even) > div:last-child h4{padding:0 20px;font-size:22px;line-height:29px;}
     #cartoesExtras .container .row > div:first-child p, #cartoesExtras .container .row:nth-of-type(even) > div:last-child p{padding:0 20px;font-size:16px;line-height:22px;}
     
+    #notfound .nfImg img#ntCloud2{display:none;}
+    #notfound .nfImg img#ntBalloon{width:160px;right:5%;top:20%;}
+    #notfound .nfImg img#ntBirds{width:55px;left:7%;}
+    #notfound .nfImg img#ntCloud1{top:2%;}
+    #notfound .nfImg img#ntCloud4{left:-60px;top:3%;}
+    #notfound .nfImg img#ntCloud5{left:-10px;}
+    #notfound .nfText p:nth-child(2){font-size:30px;}
+    
+    #cookies{width:540px;}
+    #cookies #cookiesPreferences{width:100%;padding:0;}
+    
+    #logout{padding:100px 0;}
+    
+    #loginLeft, #loginRight .loginRightContent .lrcText{display:none;}
+    #loginRight{width:100%;}
+    
 }
 
 @media all and (max-width: 575px){
@@ -745,6 +799,60 @@
     #cartoesPerguntas{padding:60px 0 30px 0;}
     #cartoesOpcoes{padding:50px 0;}
     
+    #notfound .nfText p:nth-child(1){font-size:100px;}
+    #notfound .nfText p:nth-child(2){font-size:22px;line-height:29px;margin:15px 0;}
+    #notfound .nfText small{font-size:13px;}
+    #notfound .nfImg img#ntCloud4{width:75px;left:-40px;}
+    #notfound .nfImg img#ntCloud5{width:100px;}
+    #notfound .nfImg img#ntCloud3{width:100px;right:-40px;}
+    #notfound .nfImg img#ntCloud1{width:65px;}
+    #notfound .nfImg img#ntBalloon{width:140px;top:17%;}
+    
+    #cookies{
+        width:100%;
+        padding:25px 30px;
+        bottom:0;
+        border-radius:10px 10px 0 0;
+        max-height:450px;
+        overflow-y:scroll;
+    }
+    #cookies #cookiesMain div{display:block;}
+    #cookies #cookiesMain > div:nth-child(1), #cookies #cookiesMain > div:nth-child(2), #cookies #cookiesMain > div:nth-child(3){width:100%}
+    #cookies #cookiesMain .cmHeader{padding:0;}
+    #cookies #cookiesMain > div:nth-child(2){margin:10px 0 50px 0;}
+    #cookies #cookiesMain > div:nth-child(3){
+        z-index:10000;
+        text-align:center;
+        position:fixed;
+        left:0;right:0;
+        bottom:0;
+        height:78px;
+        padding:20px 0;
+        background: rgba(255,255,255,0);
+        background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(246,246,246,0.33) 12%, rgba(248,248,248,0.86) 31%, rgba(255,255,255,0.86) 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,0)), color-stop(12%, rgba(246,246,246,0.33)), color-stop(31%, rgba(248,248,248,0.86)), color-stop(100%, rgba(255,255,255,0.86)));
+        background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(246,246,246,0.33) 12%, rgba(248,248,248,0.86) 31%, rgba(255,255,255,0.86) 100%);
+        background: -o-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(246,246,246,0.33) 12%, rgba(248,248,248,0.86) 31%, rgba(255,255,255,0.86) 100%);
+        background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(246,246,246,0.33) 12%, rgba(248,248,248,0.86) 31%, rgba(255,255,255,0.86) 100%);
+        background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(246,246,246,0.33) 12%, rgba(248,248,248,0.86) 31%, rgba(255,255,255,0.86) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 );
+    }
+    #cookies #cookiesPreferences{padding-bottom:65px;}
+    #cookies #cookiesPreferences .cookiesPHeader{margin-top:0;}
+    #cookies #cookiesPreferences .cpCol{width:100%;display:block;}
+    #cookies #cookiesPreferences .cpCol:first-child{padding:0;}
+    
+    #logout #lgHeader{margin-bottom:40px;}
+    #logout #lgHeader span{font-size:40px;}
+    #logout #lgHeader p{font-size:24px;line-height:30px;}
+    #logout #lgHeader small{font-size:14px;line-height:18px;}
+    #logout #lgBtn .logoutBtn p{border-top:none;padding:0;}
+    #logout #lgBtn .logoutBtn{width:70px;height:70px;padding:13px 2px 10px 2px;}
+    #logout #lgBanner{padding:15px;}
+    #logout #lgBanner .lgBannerText{width:190px;}
+    #logout #lgBanner h6{font-size:15px;margin-bottom:10px;}
+    #logout #lgBanner p{line-height:17px;margin-bottom:15px;letter-spacing:-0.5px;}
+
 }
 
 @media all and (max-width: 480px){

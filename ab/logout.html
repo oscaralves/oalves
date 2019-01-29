@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+<head>
+    <meta charset="UTF-8"/> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Suporte | Next 2.0 - ActivoBank</title>
+    <!-- @Googlefonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+    <!-- @Stylesheets -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/fonts.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/responsive.css" rel="stylesheet" type="text/css">
+    <!-- @Scripts -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/anime.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <![endif]-->
+    <!--[if !(IE)|(gte IE 9)]><!-->
+</head>
+    
+<body class="logout">
+    
+    <div id="btnMenuModal">
+        <div class="container">
+            <button type="button" data-toggle="modal" data-target="#menuModal" data-direction="left">
+                <span class="burger-box"><span class="burger-inner"></span></span>
+            </button>
+        </div>
+    </div>
+    
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <div id="headerLeft" class="left">
+                <a href="index.html"><span id="fulllogo" class="ic-ablogo"></span>
+                <div id="smalllogo">
+                    <span class="ic-lettera"></span>
+                    <span class="ic-letterb"></span>
+                </div>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="">Dinheiro</a></li>
+                    <li><a href="">Ser Ativo</a></li>
+                    <li class="activo"><a href="suporte.html">Quer ajuda?</a></li>
+                </ul>
+            </nav>
+            <div id="headerRight" class="right">
+                <span class="searchbtn ic-search" data-toggle="modal" data-target="#searchModal"></span>
+                <a href="login.html"><button id="btnLogin" class="white blue" type="button">Login</button></a>
+                <a href="conta.html"><button id="btnConta" class="border white" type="button">Abrir Conta</button></a>
+                <a href="lock.html"><span id="btnLock" class="ic-lock"></span></a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- MAIN CONTENT -->
+    
+    <section id="logout">
+        <div id="lg_phElements">
+            <img id="lg_ph01" class="phElem" src="assets/pageHeader/circle_white02.svg">
+            <img id="lg_ph02" class="phElem" src="assets/pageHeader/circle_white02.svg">
+            <img id="lg_ph03" class="phElem" src="assets/pageHeader/square_white02.svg">
+            <img id="lg_ph04" class="phElem" src="assets/pageHeader/square_white02.svg">
+        </div>
+        <div class="container">
+            <div id="lgHeader">
+                <span class="ic-check"></span>
+                <p>Logout realizado com sucesso!</p>
+                <small>Obrigado pelo tempo passado connosco. Esperemos vê-lo novamente em breve.</small>
+            </div>
+            <div id="lgBtn">
+                <a href=""><div class="logoutBtn">
+                    <span class="ic-home02"></span>
+                    <p>Homepage</p>
+                </div></a>
+                <a href=""><div class="logoutBtn">
+                    <span class="ic-layers"></span>
+                    <p>Contas</p>
+                </div></a>
+            </div>
+            <div class="row">
+                <div class="offset-md-2 col-md-8 offset-lg-3 col-lg-6">
+                    <aside id="lgBanner">
+                        <div class="lgBannerText">
+                            <h6>Apple Watch Series 3</h6>
+                            <p>Domilicie o ordenado no ActivoBank e compre um Apple Watch por um preço reduzido.</p>
+                            <a href="">Saiba mais<span class="ic-arrowright"></span></a>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+            <div id="lgRate">
+                <p>Avalie a sua experiência</p>
+                <p>Ajude-nos a melhorar</p>
+                <div class="lgRating">
+                    <input type="checkbox" id="st1" value="1" />
+                    <label for="st1"></label>
+                    <input type="checkbox" id="st2" value="2" />
+                    <label for="st2"></label>
+                    <input type="checkbox" id="st3" value="3" />
+                    <label for="st3"></label>
+                    <input type="checkbox" id="st4" value="4" />
+                    <label for="st4"></label>
+                    <input type="checkbox" id="st5" value="5" />
+                    <label for="st5"></label>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- SEARCH MODAL -->
+    
+    <div id="searchModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="container">
+                    <div id="searchHeader" class="row">
+                        <div class="offset-md-1 col-md-10">
+                            <span class="ic-cross" data-dismiss="modal"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="offset-md-1 col-md-10">
+                            <input id="searchInput" type="search" placeholder="Começa a escrever para pesquisar">
+                            <aside class="searchSugestions">
+                                <p>Sugestões de Pesquisa</p>
+                                <a href=""><button type="button" class="btnSearch white small">Cartões</button></a>
+                                <a href=""><button type="button" class="btnSearch white small">Crédito Habitação</button></a>
+                                <a href=""><button type="button" class="btnSearch white small">Domiciliação ordenado</button></a>
+                                <a href=""><button type="button" class="btnSearch white small">Poupanças</button></a>
+                                <a href=""><button type="button" class="btnSearch white small">Seguros</button></a>
+                                <a href=""><button type="button" class="btnSearch white small">Crédito Pessoal</button></a>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- MENU MODAL -->
+    
+    <div id="menuModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div id="menuHeader" class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <span data-dismiss="modal"></span>
+                        </div>
+                    </div>
+                </div>
+                <div id="menuContent" class="container">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <nav class="mainNav">
+                                <ul>
+                                    <li><a href="">Cartões</a></li>
+                                    <li class="active"><a href="">Crédito Habitação</a></li>
+                                    <li><a href="">Crédito Pessoal</a></li>
+                                    <li><a href="">Seguros</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col-md-4">
+                            <nav class="secondNav">
+                                <ul>
+                                    <li><a href="">Dinheiro</a></li>
+                                    <li><a href="">Ser Activo</a></li>
+                                    <li><a href="suporte.html">Quer ajuda?</a></li>
+                                    <li><a href="">Contactos</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div id="languageModal" class="languageModal" tabindex="1">PT
+                        <ul class="dropdown">
+                            <li><a href="#">EN</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <aside>
+                    <p>Segue-nos</p>
+                    <a href=""><span class="ic-facebook"></span></a>
+                    <a href=""><span class="ic-instagram"></span></a>
+                    <a href=""><span class="ic-twitter"></span></a>
+                    <a href=""><span class="ic-linkedin"></span></a>
+                </aside>
+                <img src="assets/menuShape.svg">
+            </div>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="js/functions.js"></script>
+    
+</body>
+    
+</html>
