@@ -27,6 +27,79 @@
     
 <body class="seguros">
     
+    <!-- COOKIES -->
+    
+    <aside id="cookies">
+        <div id="cookiesMain">
+            <div><img src="assets/cookie.svg"></div>
+            <div>
+                <p class="cmHeader">Este website utiliza cookies (com pepitas de chocolate) para melhorar a navegação. Ao navegar no website estará a consentir a sua utilização. Para saber mais consulte as <span><span>receitas</span> definições de cookies</span></p>
+            </div>
+            <div><button class="small fill magenta">Aceitar</button></div>
+        </div>
+        <div id="cookiesPreferences">
+                <p class="cookiesPHeader">Em alternativa, se pretende dedicar mais tempo a esta operação, escolha as suas preferências.</p>
+                <div>
+                    <div class="cpCol">
+                        <div class="cpRow">
+                            <div class="cpRowInput">
+                                <label>
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="cpRowText">
+                                <p>Técnicos</p>
+                                <p>Cookies indispensáveis ao bom funcionamento do site.</p>
+                            </div>
+                        </div>
+                        <div class="cpRow">
+                            <div class="cpRowInput">
+                                <label>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="cpRowText">
+                                <p>Preferências</p>
+                                <p>Permitem conhecer o idioma em uso na sessão do utilizador e personalizar a sua navegação no site.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cpCol">
+                        <div class="cpRow">
+                            <div class="cpRowInput">
+                                <label>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="cpRowText">
+                                <p>Estatísticas</p>
+                                <p>Cookies relativas às estatísticas do site e ao seu bom funcionamento.</p>
+                            </div>
+                        </div>
+                        <div class="cpRow">
+                            <div class="cpRowText">
+                                <p>Re-marketing</p>
+                                <p>O ActivoBank pode apresentar anúncios relacionados com os seus interesses noutros sites.</p><br>
+                                <div class="cpRowInput">
+                                    <label class="radiocheck">
+                                        <input type="checkbox">Sim
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="radiocheck">
+                                        <input type="checkbox" checked="checked">Não
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </aside>
+    
     <div id="btnMenuModal">
         <div class="container">
             <button type="button" data-toggle="modal" data-target="#menuModal" data-direction="left">
@@ -39,7 +112,7 @@
     <header>
         <div class="container">
             <div id="headerLeft" class="left">
-                <a href="index.html"><span id="fulllogo" class="ic-ablogo"></span>
+                <a href="homepage.html"><span id="fulllogo" class="ic-ablogo"></span>
                 <div id="smalllogo">
                     <span class="ic-lettera"></span>
                     <span class="ic-letterb"></span>
@@ -56,8 +129,8 @@
             <div id="headerRight" class="right">
                 <span class="searchbtn ic-search" data-toggle="modal" data-target="#searchModal"></span>
                 <a href="login.html"><button id="btnLogin" class="white blue" type="button">Login</button></a>
-                <a href="conta.html"><button id="btnConta" class="border white" type="button">Abrir Conta</button></a>
-                <a href="lock.html"><span id="btnLock" class="ic-lock"></span></a>
+                <a href=""><button id="btnConta" class="border white" type="button">Abrir Conta</button></a>
+                <a href=""><span id="btnLock" class="ic-lock"></span></a>
             </div>
         </div>
     </header>
@@ -269,7 +342,7 @@
     <footer class="footerCurve">
         <aside>
             <div class="btnWrap">
-                <a href="https://www.google.pt"><button type="button" class="fill blue">Abrir conta</button></a>
+                <a href=""><button type="button" class="fill blue">Abrir conta</button></a>
             </div>
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="4000px" height="45px" viewBox="0 0 4000 45">
                 <path id="footer01" fill="#000000" fill-rule="evenodd" d="M0,45 L0,14.2905405 C0,14.2905405 469.8,17.4324324 625,16.4189189 C788.9,15.3040541 1029.4,8.31081081 1164.2,7.90540541 C1284.9,7.5 1406.3,17.9391892 1607.2,18.75 C1709.3,19.1554054 1852.8,0 1877.1,0 C1901.4,0 1907.2,11.5540541 1908.1,19.1554054 C1909.4,30 1923.3,43.4797297 1941.2,44.0878378 C1949.3,44.3918919 1981.6,44.2905405 2004.3,44.2905405 C2026.2,44.2905405 2052.2,44.3918919 2059.3,44.0878378 C2069.9,43.5810811 2080.6,36.8918919 2089.7,25.8445946 C2107.2,4.66216216 2160.8,1.72297297 2224.5,2.02702703 C2399.5,2.83783784 2718.3,13.277027 2868.8,8.00675676 C3207.9,-3.64864865 4000,20.6756757 4000,20.6756757 L4000,45 L0,45 Z"/>
@@ -279,7 +352,7 @@
             <div class="container">
                 <div id="topMenu">
                     <aside>
-                        <a href="">
+                        <a href="homepage.html">
                             <span class="ic-lettera"></span>
                             <span class="ic-letterb"></span>
                         </a>
@@ -305,7 +378,7 @@
                             <li><a href="suporte.html">Suporte</a></li>
                             <li><a href="">Informação Legal</a></li>
                             <li><a href="">FAQ</a></li>
-                            <li><a href="">Preçário</a></li>
+                            <li><a href="suporte.html">Preçário</a></li>
                             <li><a href="">Contactos</a></li>
                         </ul>
                     </nav>
@@ -374,10 +447,10 @@
                         <div class="col-md-8">
                             <nav class="mainNav">
                                 <ul>
-                                    <li><a href="">Cartões</a></li>
+                                    <li><a href="ccredito.html">Cartões</a></li>
                                     <li class="active"><a href="">Crédito Habitação</a></li>
                                     <li><a href="">Crédito Pessoal</a></li>
-                                    <li><a href="">Seguros</a></li>
+                                    <li><a href="seguros.html">Seguros</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -386,7 +459,7 @@
                                 <ul>
                                     <li><a href="">Dinheiro</a></li>
                                     <li><a href="">Ser Activo</a></li>
-                                    <li><a href="">Quer ajuda?</a></li>
+                                    <li><a href="suporte.html">Quer ajuda?</a></li>
                                     <li><a href="">Contactos</a></li>
                                 </ul>
                             </nav>
@@ -510,24 +583,6 @@
             direction: 'alternate',
             loop: true,
             autoplay: true
-        });
-        
-        $(document).ready( function(){
-            
-            /* OPEN MENU MODAL ANIMATION */
-            
-            $('#btnMenuModal button').click( function(){
-                $(this).toggleClass('is-active');
-            });
-            $('#menuModal').on("hide.bs.modal", function() {
-                $('#btnMenuModal button').removeClass('is-active');
-            })
-            
-            /* INPUT FOCUS - SEARCH MODAL */
-            
-            $('#searchModal').on('shown.bs.modal', function (e){
-                $('#searchInput').focus();
-            })
         });
     </script>
     

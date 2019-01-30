@@ -25,7 +25,80 @@
     <!--[if !(IE)|(gte IE 9)]><!-->
 </head>
     
-<body>
+<body class="supPages">
+    
+    <!-- COOKIES -->
+    
+    <aside id="cookies">
+        <div id="cookiesMain">
+            <div><img src="assets/cookie.svg"></div>
+            <div>
+                <p class="cmHeader">Este website utiliza cookies (com pepitas de chocolate) para melhorar a navegação. Ao navegar no website estará a consentir a sua utilização. Para saber mais consulte as <span><span>receitas</span> definições de cookies</span></p>
+            </div>
+            <div><button class="small fill magenta">Aceitar</button></div>
+        </div>
+        <div id="cookiesPreferences">
+                <p class="cookiesPHeader">Em alternativa, se pretende dedicar mais tempo a esta operação, escolha as suas preferências.</p>
+                <div>
+                    <div class="cpCol">
+                        <div class="cpRow">
+                            <div class="cpRowInput">
+                                <label>
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="cpRowText">
+                                <p>Técnicos</p>
+                                <p>Cookies indispensáveis ao bom funcionamento do site.</p>
+                            </div>
+                        </div>
+                        <div class="cpRow">
+                            <div class="cpRowInput">
+                                <label>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="cpRowText">
+                                <p>Preferências</p>
+                                <p>Permitem conhecer o idioma em uso na sessão do utilizador e personalizar a sua navegação no site.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cpCol">
+                        <div class="cpRow">
+                            <div class="cpRowInput">
+                                <label>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="cpRowText">
+                                <p>Estatísticas</p>
+                                <p>Cookies relativas às estatísticas do site e ao seu bom funcionamento.</p>
+                            </div>
+                        </div>
+                        <div class="cpRow">
+                            <div class="cpRowText">
+                                <p>Re-marketing</p>
+                                <p>O ActivoBank pode apresentar anúncios relacionados com os seus interesses noutros sites.</p><br>
+                                <div class="cpRowInput">
+                                    <label class="radiocheck">
+                                        <input type="checkbox">Sim
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="radiocheck">
+                                        <input type="checkbox" checked="checked">Não
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </aside>
     
     <div id="btnMenuModal">
         <div class="container">
@@ -39,7 +112,7 @@
     <header>
         <div class="container">
             <div id="headerLeft" class="left">
-                <a href="index.html"><span id="fulllogo" class="ic-ablogo"></span>
+                <a href="homepage.html"><span id="fulllogo" class="ic-ablogo"></span>
                 <div id="smalllogo">
                     <span class="ic-lettera"></span>
                     <span class="ic-letterb"></span>
@@ -56,8 +129,8 @@
             <div id="headerRight" class="right">
                 <span class="searchbtn ic-search" data-toggle="modal" data-target="#searchModal"></span>
                 <a href="login.html"><button id="btnLogin" class="white blue" type="button">Login</button></a>
-                <a href="conta.html"><button id="btnConta" class="border white" type="button">Abrir Conta</button></a>
-                <a href="lock.html"><span id="btnLock" class="ic-lock"></span></a>
+                <a href=""><button id="btnConta" class="border white" type="button">Abrir Conta</button></a>
+                <a href=""><span id="btnLock" class="ic-lock"></span></a>
             </div>
         </div>
     </header>
@@ -104,13 +177,13 @@
         <div class="container">
             <div id="suporteCatDrop" class="suporteCatDrop" tabindex="1">Categorias
                 <ul class="dropdown">
-                    <li><a href="perguntasfrequentes.html">Abrir Conta</a></li>
-                    <li><a href="perguntasfrequentes.html">Pagamentos</a></li>
-                    <li><a href="perguntasfrequentes.html">Transferências</a></li>
-                    <li class="activo"><a href="perguntasfrequentes.html">Cartões</a></li>
-                    <li><a href="perguntasfrequentes.html">Investimentos</a></li>
-                    <li><a href="perguntasfrequentes.html">Seguros</a></li>
-                    <li><a href="perguntasfrequentes.html">Apps</a></li>
+                    <li><a href="perguntasfrequentes.html#suporteBreadcrumb">Abrir Conta</a></li>
+                    <li><a href="perguntasfrequentes.html#suporteBreadcrumb">Pagamentos</a></li>
+                    <li><a href="perguntasfrequentes.html#suporteBreadcrumb">Transferências</a></li>
+                    <li class="activo"><a href="perguntasfrequentes.html#suporteBreadcrumb">Cartões</a></li>
+                    <li><a href="perguntasfrequentes.html#suporteBreadcrumb">Investimentos</a></li>
+                    <li><a href="perguntasfrequentes.html#suporteBreadcrumb">Seguros</a></li>
+                    <li><a href="perguntasfrequentes.html#suporteBreadcrumb">Apps</a></li>
                 </ul>
             </div>
         </div>
@@ -120,7 +193,7 @@
         <div class="container">
             <div class="row">
                 <div class="offset-md-3 col-md-9">
-                    <p><a href="perguntasfrequentes.html">Perguntas Frequentes</a> <span class="ic-dropdownRight"></span> <a href="perguntasfrequentes.html">Cartões</a> <span class="ic-dropdownRight"></span> O meu cartão não está a funcionar</p>
+                    <p><a href="perguntasfrequentes.html#suporteBreadcrumb">Perguntas Frequentes</a> <span class="ic-dropdownRight"></span> <a href="perguntasfrequentes.html#suporteBreadcrumb">Cartões</a> <span class="ic-dropdownRight"></span> O meu cartão não está a funcionar</p>
                 </div>
             </div>
         </div>
@@ -131,13 +204,13 @@
             <div class="row">
                 <div id="suporteNav" class="col-md-3">
                     <ul>
-                        <li><a href="perguntasfrequentes.html">Abrir Conta</a></li>
-                        <li><a href="perguntasfrequentes.html">Pagamentos</a></li>
-                        <li><a href="perguntasfrequentes.html">Transferências</a></li>
-                        <li class="activo"><a href="perguntasfrequentes.html">Cartões</a></li>
-                        <li><a href="perguntasfrequentes.html">Investimentos</a></li>
-                        <li><a href="perguntasfrequentes.html">Seguros</a></li>
-                        <li><a href="perguntasfrequentes.html">Apps</a></li>
+                        <li><a href="perguntasfrequentes.html#suporteBreadcrumb">Abrir Conta</a></li>
+                        <li><a href="perguntasfrequentes.html#suporteBreadcrumb">Pagamentos</a></li>
+                        <li><a href="perguntasfrequentes.html#suporteBreadcrumb">Transferências</a></li>
+                        <li class="activo"><a href="perguntasfrequentes.html#suporteBreadcrumb">Cartões</a></li>
+                        <li><a href="perguntasfrequentes.html#suporteBreadcrumb">Investimentos</a></li>
+                        <li><a href="perguntasfrequentes.html#suporteBreadcrumb">Seguros</a></li>
+                        <li><a href="perguntasfrequentes.html#suporteBreadcrumb">Apps</a></li>
                     </ul>
                 </div>
                 <div id="suporteResposta" class="col-md-9">
@@ -180,11 +253,11 @@
                     <div class="suporteRelated">
                         <h6>Artigos relacionados</h6>
                         <ul>
-                            <li><a href="resposta.html">O meu cartão está perdido ou roubado</a></li>
-                            <li><a href="resposta.html">O meu cartão está comprometido</a></li>
-                            <li><a href="resposta.html">O meu cartão foi engolido pela ATM</a></li>
-                            <li><a href="resposta.html">O meu cartão está perdido ou roubado</a></li>
-                            <li><a href="resposta.html">O meu cartão está comprometido</a></li>
+                            <li><a href="resposta.html#suporteBreadcrumb">O meu cartão está perdido ou roubado</a></li>
+                            <li><a href="resposta.html#suporteBreadcrumb">O meu cartão está comprometido</a></li>
+                            <li><a href="resposta.html#suporteBreadcrumb">O meu cartão foi engolido pela ATM</a></li>
+                            <li><a href="resposta.html#suporteBreadcrumb">O meu cartão está perdido ou roubado</a></li>
+                            <li><a href="resposta.html#suporteBreadcrumb">O meu cartão está comprometido</a></li>
                         </ul>
                     </div>
                 </div>
@@ -194,13 +267,13 @@
     
     <footer>
         <div class="btnWrap">
-            <a href="https://www.google.pt"><button type="button" class="fill magenta">Abrir conta</button></a>
+            <a href=""><button type="button" class="fill magenta">Abrir conta</button></a>
         </div>
         <section>
             <div class="container">
                 <div id="topMenu">
                     <aside>
-                        <a href="">
+                        <a href="homepage.html">
                             <span class="ic-lettera"></span>
                             <span class="ic-letterb"></span>
                         </a>
@@ -225,7 +298,7 @@
                         <ul>
                             <li><a href="suporte.html">Suporte</a></li>
                             <li><a href="">Informação Legal</a></li>
-                            <li><a href="">FAQ</a></li>
+                            <li><a href="suporte.html">FAQ</a></li>
                             <li><a href="">Preçário</a></li>
                             <li><a href="">Contactos</a></li>
                         </ul>
@@ -295,10 +368,10 @@
                         <div class="col-md-8">
                             <nav class="mainNav">
                                 <ul>
-                                    <li><a href="">Cartões</a></li>
+                                    <li><a href="ccredito.html">Cartões</a></li>
                                     <li class="active"><a href="">Crédito Habitação</a></li>
                                     <li><a href="">Crédito Pessoal</a></li>
-                                    <li><a href="">Seguros</a></li>
+                                    <li><a href="seguros.html">Seguros</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -332,27 +405,6 @@
     </div>
     
     <script type="text/javascript" src="js/functions.js"></script>
-    <script type="text/javascript">
-        
-        $(document).ready( function(){
-            
-            /* OPEN MENU MODAL ANIMATION */
-            
-            $('#btnMenuModal button').click( function(){
-                $(this).toggleClass('is-active');
-            });
-            $('#menuModal').on("hide.bs.modal", function() {
-                $('#btnMenuModal button').removeClass('is-active');
-            })
-            
-            /* INPUT FOCUS - SEARCH MODAL */
-            
-            $('#searchModal').on('shown.bs.modal', function (e) {
-                $('#searchInput').focus();
-            });
-            
-        });
-    </script>
     
 </body>
     

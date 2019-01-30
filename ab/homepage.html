@@ -25,7 +25,80 @@
     <!--[if !(IE)|(gte IE 9)]><!-->
 </head>
     
-<body>
+<body class="homepage">
+    
+    <!-- COOKIES -->
+    
+    <aside id="cookies">
+        <div id="cookiesMain">
+            <div><img src="assets/cookie.svg"></div>
+            <div>
+                <p class="cmHeader">Este website utiliza cookies (com pepitas de chocolate) para melhorar a navegação. Ao navegar no website estará a consentir a sua utilização. Para saber mais consulte as <span><span>receitas</span> definições de cookies</span></p>
+            </div>
+            <div><button class="small fill magenta">Aceitar</button></div>
+        </div>
+        <div id="cookiesPreferences">
+                <p class="cookiesPHeader">Em alternativa, se pretende dedicar mais tempo a esta operação, escolha as suas preferências.</p>
+                <div>
+                    <div class="cpCol">
+                        <div class="cpRow">
+                            <div class="cpRowInput">
+                                <label>
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="cpRowText">
+                                <p>Técnicos</p>
+                                <p>Cookies indispensáveis ao bom funcionamento do site.</p>
+                            </div>
+                        </div>
+                        <div class="cpRow">
+                            <div class="cpRowInput">
+                                <label>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="cpRowText">
+                                <p>Preferências</p>
+                                <p>Permitem conhecer o idioma em uso na sessão do utilizador e personalizar a sua navegação no site.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cpCol">
+                        <div class="cpRow">
+                            <div class="cpRowInput">
+                                <label>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="cpRowText">
+                                <p>Estatísticas</p>
+                                <p>Cookies relativas às estatísticas do site e ao seu bom funcionamento.</p>
+                            </div>
+                        </div>
+                        <div class="cpRow">
+                            <div class="cpRowText">
+                                <p>Re-marketing</p>
+                                <p>O ActivoBank pode apresentar anúncios relacionados com os seus interesses noutros sites.</p><br>
+                                <div class="cpRowInput">
+                                    <label class="radiocheck">
+                                        <input type="checkbox">Sim
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="radiocheck">
+                                        <input type="checkbox" checked="checked">Não
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </aside>
     
     <div id="btnMenuModal">
         <div class="container">
@@ -39,7 +112,7 @@
     <header>
         <div class="container">
             <div id="headerLeft" class="left">
-                <a href="index.html"><span id="fulllogo" class="ic-ablogo"></span>
+                <a href="homepage.html"><span id="fulllogo" class="ic-ablogo"></span>
                 <div id="smalllogo">
                     <span class="ic-lettera"></span>
                     <span class="ic-letterb"></span>
@@ -56,8 +129,8 @@
             <div id="headerRight" class="right">
                 <span class="searchbtn ic-search" data-toggle="modal" data-target="#searchModal"></span>
                 <a href="login.html"><button id="btnLogin" class="white blue" type="button">Login</button></a>
-                <a href="conta.html"><button id="btnConta" class="border white" type="button">Abrir Conta</button></a>
-                <a href="lock.html"><span id="btnLock" class="ic-lock"></span></a>
+                <a href=""><button id="btnConta" class="border white" type="button">Abrir Conta</button></a>
+                <a href=""><span id="btnLock" class="ic-lock"></span></a>
             </div>
         </div>
     </header>
@@ -131,7 +204,7 @@
                             </div></a>
                         </div>
                         <div class="col-md-3">
-                            <a href=""><div class="card blue" style="background-image:url(assets/clientesActivo/cardGadget.jpg);">
+                            <a href="seguros.html"><div class="card blue" style="background-image:url(assets/clientesActivo/cardGadget.jpg);">
                                 <div class="cardText topText">
                                     <small>Seguros</small>
                                     <h6>Gadget</h6>
@@ -163,7 +236,7 @@
                                 </div></a>
                             </div>
                             <div class="swiper-slide">
-                                <a href=""><div class="card blue" style="background-image:url(assets/clientesActivo/cardGadget.jpg);">
+                                <a href="seguros.html"><div class="card blue" style="background-image:url(assets/clientesActivo/cardGadget.jpg);">
                                     <div class="cardText topText">
                                         <small>Seguros</small>
                                         <h6>Gadget</h6>
@@ -288,11 +361,11 @@
                         <div class="row">
                             <div class="col-md-6 offset-lg-3 col-lg-3">
                                 <p>Duis id felis eget diam consequat tincidunt in non.</p>
-                                <a href=""><button type="button" class="border orange">Pedir Cartão Crédito</button></a>
+                                <a href="ccredito.html"><button type="button" class="border orange">Pedir Cartão Crédito</button></a>
                             </div>
                             <div class="col-md-6 col-lg-3">
                                 <p>Etiam quis vestibulum ex, quis convallis magna.</p>
-                                <a href=""><button type="button" class="border magenta">Pedir Cartão Boost</button></a>
+                                <a href="cboost.html"><button type="button" class="border magenta">Pedir Cartão Boost</button></a>
                             </div>
                         </div>
                     </div>
@@ -389,7 +462,7 @@
                         </div>
                         <div class="col-md-7">
                             <div id="resultado">
-                                <p><span>por mês</span><br>6.463,26<sub>€</sub></p>
+                                <p><span>por mês</span><br>243,26<sub>€</sub></p>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="142px" height="117px" viewBox="0 0 142 117">
                                     <path id="credito02" fill="#FFFFFF" fill-rule="evenodd" d="M138.255096,29.1488737 C151.036997,52.2189927 129.590783,78.1808233 95.1733604,98.4398643 C60.7375182,118.728382 26.3981817,125.617877 13.6162806,102.547759 C0.834379445,79.4776395 -12.5327658,29.1955397 21.8846571,8.93649882 C56.3020801,-11.3225421 125.473194,6.07875475 138.255096,29.1488737 Z"/>
                                 </svg>
@@ -458,7 +531,7 @@
                         <div class="swiper-container">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <a href=""><div class="cardSeg">
+                                    <a href="seguros.html"><div class="cardSeg">
                                         <h6>Viagem</h6>
                                         <p>Saiba como viajar de forma descansada!</p>
                                         <img src="assets/seguros/viagem.svg">
@@ -466,7 +539,7 @@
                                     </div></a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a href=""><div class="cardSeg">
+                                    <a href="seguros.html"><div class="cardSeg">
                                         <h6>Casa</h6>
                                         <p>Saiba como viajar de forma descansada!</p>
                                         <img src="assets/seguros/casa.svg">
@@ -474,7 +547,7 @@
                                     </div></a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a href=""><div class="cardSeg">
+                                    <a href="seguros.html"><div class="cardSeg">
                                         <h6>Saúde</h6>
                                         <p>Saiba como viajar de forma descansada!</p>
                                         <img src="assets/seguros/saude.svg">
@@ -482,7 +555,7 @@
                                     </div></a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a href=""><div class="cardSeg">
+                                    <a href="seguros.html"><div class="cardSeg">
                                         <h6>Gadget</h6>
                                         <p>Saiba como viajar de forma descansada!</p>
                                         <img src="assets/seguros/gadget.svg">
@@ -490,7 +563,7 @@
                                     </div></a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a href=""><div class="cardSeg">
+                                    <a href="seguros.html"><div class="cardSeg">
                                         <h6>Automóvel</h6>
                                         <p>Saiba como viajar de forma descansada!</p>
                                         <img src="assets/seguros/automovel.svg">
@@ -498,7 +571,7 @@
                                     </div></a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a href=""><div class="cardSeg">
+                                    <a href="seguros.html"><div class="cardSeg">
                                         <h6>Animais</h6>
                                         <p>Saiba como viajar de forma descansada!</p>
                                         <img src="assets/seguros/animais.svg">
@@ -518,42 +591,42 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-2">
-                            <a href=""><div class="cardSeg">
+                            <a href="seguros.html"><div class="cardSeg">
                                 <h6>Viagem</h6>
                                 <img src="assets/seguros/viagem.svg">
                                 <span class="ic-arrowright"></span>
                             </div></a>
                         </div>
                         <div class="col-md-2">
-                            <a href=""><div class="cardSeg">
+                            <a href="seguros.html"><div class="cardSeg">
                                 <h6>Casa</h6>
                                 <img src="assets/seguros/casa.svg">
                                 <span class="ic-arrowright"></span>
                             </div></a>
                         </div>
                         <div class="col-md-2">
-                            <a href=""><div class="cardSeg">
+                            <a href="seguros.html"><div class="cardSeg">
                                 <h6>Saúde</h6>
                                 <img src="assets/seguros/saude.svg">
                                 <span class="ic-arrowright"></span>
                             </div></a>
                         </div>
                         <div class="col-md-2">
-                            <a href=""><div class="cardSeg">
+                            <a href="seguros.html"><div class="cardSeg">
                                 <h6>Gadget</h6>
                                 <img src="assets/seguros/gadget.svg">
                                 <span class="ic-arrowright"></span>
                             </div></a>
                         </div>
                         <div class="col-md-2">
-                            <a href=""><div class="cardSeg">
+                            <a href="seguros.html"><div class="cardSeg">
                                 <h6>Automóvel</h6>
                                 <img src="assets/seguros/automovel.svg">
                                 <span class="ic-arrowright"></span>
                             </div></a>
                         </div>
                         <div class="col-md-2">
-                            <a href=""><div class="cardSeg">
+                            <a href="seguros.html"><div class="cardSeg">
                                 <h6>Animais</h6>
                                 <img src="assets/seguros/animais.svg">
                                 <span class="ic-arrowright"></span>
@@ -719,7 +792,7 @@
                     <div class="container">
                         <div id="topMenu">
                             <aside>
-                                <a href="">
+                                <a href="homepage.html">
                                     <span class="ic-lettera"></span>
                                     <span class="ic-letterb"></span>
                                 </a>
@@ -744,7 +817,7 @@
                                 <ul>
                                     <li><a href="suporte.html">Suporte</a></li>
                                     <li><a href="">Informação Legal</a></li>
-                                    <li><a href="">FAQ</a></li>
+                                    <li><a href="suporte.html">FAQ</a></li>
                                     <li><a href="">Preçário</a></li>
                                     <li><a href="">Contactos</a></li>
                                 </ul>
@@ -784,11 +857,11 @@
                             <input id="searchInput" type="search" placeholder="Começa a escrever para pesquisar">
                             <aside class="searchSugestions">
                                 <p>Sugestões de Pesquisa</p>
-                                <a href=""><button type="button" class="btnSearch white small">Cartões</button></a>
+                                <a href="ccredito.html"><button type="button" class="btnSearch white small">Cartões</button></a>
                                 <a href=""><button type="button" class="btnSearch white small">Crédito Habitação</button></a>
                                 <a href=""><button type="button" class="btnSearch white small">Domiciliação ordenado</button></a>
                                 <a href=""><button type="button" class="btnSearch white small">Poupanças</button></a>
-                                <a href=""><button type="button" class="btnSearch white small">Seguros</button></a>
+                                <a href="seguros.html"><button type="button" class="btnSearch white small">Seguros</button></a>
                                 <a href=""><button type="button" class="btnSearch white small">Crédito Pessoal</button></a>
                             </aside>
                         </div>
@@ -816,10 +889,10 @@
                         <div class="col-md-8">
                             <nav class="mainNav">
                                 <ul>
-                                    <li><a href="">Cartões</a></li>
+                                    <li><a href="ccredito.html">Cartões</a></li>
                                     <li class="active"><a href="">Crédito Habitação</a></li>
                                     <li><a href="">Crédito Pessoal</a></li>
-                                    <li><a href="">Seguros</a></li>
+                                    <li><a href="seguros.html">Seguros</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -828,7 +901,7 @@
                                 <ul>
                                     <li><a href="">Dinheiro</a></li>
                                     <li><a href="">Ser Activo</a></li>
-                                    <li><a href="">Quer ajuda?</a></li>
+                                    <li><a href="suporte.html">Quer ajuda?</a></li>
                                     <li><a href="">Contactos</a></li>
                                 </ul>
                             </nav>
@@ -1042,15 +1115,6 @@
                 slide();
             });
             
-            /* OPEN MENU MODAL ANIMATION */
-            
-            $('#btnMenuModal button').click( function(){
-                $(this).toggleClass('is-active');
-            });
-            $('#menuModal').on("hide.bs.modal", function() {
-                $('#btnMenuModal button').removeClass('is-active');
-            })
-            
             /* CAROUSEL - CARTOES */
             
             $('.cardSliderButtons').click( function(){
@@ -1082,12 +1146,6 @@
             });
             
             $('.carousel').carousel({interval: false});
-            
-            /* INPUT FOCUS - SEARCH MODAL */
-            
-            $('#searchModal').on('shown.bs.modal', function (e) {
-                $('#searchInput').focus();
-            })
         });
     </script>
     

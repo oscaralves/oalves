@@ -9,6 +9,7 @@ body{
     font-weight:400;
     font-size:1.4rem;
     overflow-x:hidden;
+    left:0;
     min-width:32rem;
     -webkit-backface-visibility: hidden;
     position: relative;
@@ -100,7 +101,9 @@ h2{
 #credito_mobile,
 #btn_oqsaber,
 #suporteNav_m,
-.segImg_mobile{
+.segImg_mobile,
+.lrcFooter_m,
+.cboost_mobile{
     display:none;
 }
 
@@ -108,7 +111,7 @@ h2{
 
 #cookies{
     width:1140px;
-    position:absolute;
+    position:fixed;
     bottom:30px;
     left:0;
     right:0;
@@ -157,7 +160,7 @@ h2{
     font-size:14px;
     margin-bottom:5px;
 }
-#cookies #cookiesPreferences .cpCol .cpRow .cpRowText p:nth-child(2){line-height:17px;font-size:14px;}
+#cookies #cookiesPreferences .cpCol .cpRow .cpRowText p:nth-child(2){line-height:17px;font-size:14px;color:#1E2E42;}
 #cookies #cookiesPreferences .cpCol .cpRow .cpRowInput label{
     display: block;
     position: relative;
@@ -207,6 +210,7 @@ h2{
     padding-left: 30px;
     margin-right:15px;
     font-size:14px;
+    color:#1E2E42;
 }
 #cookies #cookiesPreferences .cpCol .cpRow .cpRowInput label.radiocheck input{margin-top:15px;}
 #cookies #cookiesPreferences .cpCol .cpRow .cpRowInput label.radiocheck .checkmark{border-radius:50%;}
@@ -234,6 +238,8 @@ h2{
 .supFaq h6{font-size:24px;line-height:29px;}
 .supFaq span{
     font-size:26px;
+    float:right;
+    display:inline;
     -webkit-transition: transform 0.3s ease-in-out;
     -moz-transition: transform 0.3s ease-in-out;
     -o-transition: transform 0.3s ease-in-out;
@@ -1219,7 +1225,7 @@ footer > section .container > p{color:#ffffff;font-size:14px;margin-top:20px;}
     position:absolute;
     top:30px;
     left:150px;
-    width:148px;
+    width:142px;
     height:118px;
 }
 #credito #resultado p{
@@ -1292,7 +1298,12 @@ input[type='range']::-webkit-slider-thumb{
     font-weight:300;
     margin-bottom:1.2rem;
 }
-#credito #simuladorCP p.rangeValue span{font-size:2.6rem;font-weight:700;margin-right:0.5rem !important;}
+#credito #simuladorCP p.rangeValue span{
+    font-size:2.6rem;
+    font-weight:700;
+    margin-right:0.5rem !important;
+    font-variant-numeric:tabular-nums;
+}
 #credito #simuladorCP p.credLegenda{font-size:1.6rem;margin-top:3.5rem;font-weight:300;}
 #credito #simuladorCP p span{margin-right:4rem;}
 #credito #simuladorCP p span:last-child{margin-right:0;}
@@ -1549,7 +1560,7 @@ footer.footerCurve .btnWrap button{border:none;}
     width:calc(100% - 90px);
     border:none;
     border-radius:35px;
-    font-size:18px;
+    font-size:20px;
     padding:20px 60px 20px 30px;
     -webkit-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.15);
     -moz-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.15);
@@ -1637,7 +1648,7 @@ footer.footerCurve .btnWrap button{border:none;}
 #suporteVideos .container .row > div:last-child a{font-size:20px;color:#E0119D;}
 #suporteVideos .container .row > div:last-child a span{vertical-align:middle;margin-left:5px;}
 
-#suporteBreadcrumb{margin:80px 0;position:relative;z-index:1000;}
+#suporteBreadcrumb{padding:80px 0;position:relative;z-index:1000;}
 #suporteBreadcrumb p{font-weight:700;font-size:14px;line-height:19px;}
 #suporteBreadcrumb a{color:#E0119D;font-weight:500;}
 #suporteBreadcrumb span{font-size:10px;margin:0 6px;}
@@ -1836,7 +1847,7 @@ body.seguros header button.white.blue{color:#8F23B3;}
     box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.1);
     text-align:left;
 }
-#segurosFaq small{color:#AAB1B9;font-size:20px;line-height:25px;}
+#segurosFaq small{color:#AAB1B9;font-size:18px;line-height:25px;}
 #segurosFaq small a{font-weight:500;text-decoration:underline;}
 #segurosFaq .supFaq span{color:#CCD1D5;}
 
@@ -1904,6 +1915,7 @@ body.cartoes{background-color:#000000;color:#ffffff;}
 body.cartoes header button.white.blue{color:#000000;}
 
 #cartoesHeader{padding-top:300px;position:relative;}
+#cartoesHeader .container .row > div:first-child{z-index:10;}
 #cartoesHeader h1{
     font-size:6.5rem;
     font-family:'Simple', sans-serif;
@@ -1912,6 +1924,9 @@ body.cartoes header button.white.blue{color:#000000;}
 }
 #cartoesHeader p{font-size:24px;margin-bottom:50px;line-height:34px;}
 #cartoesHeader aside{position:absolute;right:-220px;top:50%;}
+body.boost #cartoesHeader aside{position:static;text-align:center;}
+body.boost #cartoesHeader aside img{transform:none;margin-top:0;float:none;}
+body.boost #cartoesHeader aside img:last-child{width:100%;margin-top:-16px;}
 #cartoesHeader aside img{float:right}
 #cartoesHeader aside img:nth-child(1){transform:rotate(25deg);margin-top:130px;}
 #cartoesHeader aside img:nth-child(2){transform:rotate(-22deg);}
@@ -1981,7 +1996,7 @@ body.cartoes header button.white.blue{color:#000000;}
 #cartoesPerguntas .supFaqs{margin:70px 0 60px 0;}
 #cartoesPerguntas .supFaqs .supFaq{border:solid 1px #ffffff;text-align:left;}
 #cartoesPerguntas .supFaq span{color:#5c5c5c;}
-#cartoesPerguntas small{color:#ffffff;font-size:20px;line-height:25px;}
+#cartoesPerguntas small{color:#ffffff;font-size:17px;line-height:25px;}
 #cartoesPerguntas small a{font-weight:500;text-decoration:underline;}
 
 #cartoesDownload{margin-top:80px;}
@@ -2001,7 +2016,7 @@ body.cartoes header button.white.blue{color:#000000;}
     transform:translateY(-50%);
     max-width:60%;
 }
-#cartoesDownload .appDownloadText h5{font-size:22px;line-height:27px;margin-bottom:15px;font-weight:700;}
+#cartoesDownload .appDownloadText h5{font-size:22px;line-height:30px;margin-bottom:15px;font-weight:700;}
 #cartoesDownload .appDownloadText p{font-size:16px;line-height:20px;font-weight:300;}
 #cartoesDownload .appDownloadBtn{
     position:absolute;
@@ -2253,25 +2268,29 @@ body.logout header button.white.blue{color:#8F23B3;}
     line-height:19px;
     width:90%;
 }
-#loginRight .loginRightContent{width:350px;float:right;position:relative;height:100vh;}
+#loginRight .loginRightContent{
+    width:350px;
+    float:right;
+    position:relative;
+    height:100vh;
+}
 #loginRight .loginRightContent .lrcText{
-    text-align:center;
+    text-align:right;
     color:#ffffff;
     position:absolute;
-    top:50%;
-    transform:translateY(-50%);
+    top:300px;
 }
 #loginRight .loginRightContent .lrcText h4{
-    font-size:40px;
+    font-size:36px;
     font-weight:700;
-    line-height:45px;
+    line-height:50px;
     margin-bottom:20px;
 }
-#loginRight .loginRightContent .lrcText p{font-size:20px;line-height:24px;}
+#loginRight .loginRightContent .lrcText p{font-size:20px;line-height:30px;}
 #loginRight .loginRightContent .lrcFooter{
     position:absolute;
     bottom:60px;
-    text-align:center;
+    text-align:right;
     width:100%;
 }
 #loginRight .loginRightContent .lrcFooter p{color:#ffffff;font-size:16px;}
@@ -2358,9 +2377,7 @@ body.logout header button.white.blue{color:#8F23B3;}
     transition: all 0.2s ease-in-out;
 }
 #loginFields .input input:focus + label::after,
-.input--filled #loginFields .input label::after {
-	-webkit-transform: translate3d(0, 0.5em, 0);
-	transform: translate3d(0, 0.5em, 0);
+.input--filled #loginFields .input label::after{
     background-color:#009EFF;
 }
 #loginFields button.fill.magenta{width:100%;}
@@ -2389,23 +2406,15 @@ body.logout header button.white.blue{color:#8F23B3;}
 #loginFields p{font-size:14px;margin-top:20px;}
 #loginFields p a{font-weight:700;color:#E0119D;}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#loginFields p.loginOrder{margin-top:0;text-align:left;line-height:19px;}
+#loginFields .loginCode{margin:30px 0;text-align:center;}
+#loginFields .loginCode .loginCodeInput{display:inline-block;width:30px;margin:0 15px;}
+#loginFields .loginCode .loginCodeInput input{
+    width:100%;
+    border:solid 1px #979797;
+    background-color:#FBFBFB;
+    border-radius:4px;
+    height:30px;
+    text-align:center;
+}
+#loginFields .loginCode .loginCodeInput label{color:#1E2E42;font-size:16px;margin-bottom:5px;}
