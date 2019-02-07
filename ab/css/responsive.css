@@ -686,7 +686,7 @@
     #segurosHeader .container .row{margin:0;}
     #segurosHeaderImg img.segImg_mobile{display:block;width:100%;position:static;}
     
-    #cartoesHeader{padding-top:150px;text-align:center;}
+    #cartoesHeader{padding-top:150px;text-align:center;overflow:hidden;}
     #cartoesHeader button{margin-top:250px;}
     #cartoesHeader aside{
         top:350px;
@@ -769,6 +769,8 @@
     .lrcFooter_m p:first-child button.white.magenta{font-weight:700;margin-left:15px;}
     .lrcFooter_m p:last-child{font-size:13px;line-height:16px;margin-top:20px;}
     #loginFields p.loginOrder{text-align:center;}
+    
+    #footerHome.footerCurve{position:static;}
     
 }
 
