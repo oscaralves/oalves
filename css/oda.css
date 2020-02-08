@@ -138,10 +138,10 @@ THE GRID
 */
 
 #wrapper {
-    height: 100vh;
+    height:95vh;
     display: grid;
-    grid-template-columns: 8% auto 4%;  
-    grid-template-rows: 10% auto 26%;
+    grid-template-columns: 8% 88% 4%;  
+    grid-template-rows: 10% 74% 16%;
     grid-template-areas:
         "header header header"
         "main main main"
@@ -168,7 +168,7 @@ footer {
 ul.footerNav li {
     list-style-type: none;
     display:inline;
-    margin-right:2rem;
+    margin-right:1.6rem;
 }
 
 ul.footerNav li:last-child  {
@@ -259,10 +259,15 @@ Media Query: Larger than tablet
         width:100%;
     }
     
+    ul.footerNav li {
+
+        margin-right:2rem;
+    }
+    
     #wrapper {
         grid-template-columns: 8% 84% 8%;  
         grid-template-rows: 10% 64% 26%;
-}
+    }
 
 
     footer {
