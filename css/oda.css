@@ -138,8 +138,7 @@ THE GRID
 */
 
 #wrapper {
-    width: 100vw;
-    height:100vh;
+    height: 100vh;
     display: grid;
     grid-template-columns: 8% auto 4%;  
     grid-template-rows: 10% auto 26%;
@@ -165,6 +164,44 @@ footer {
 }
 
 
+
+ul.footerNav li {
+    list-style-type: none;
+    display:inline;
+    margin-right:2rem;
+}
+
+ul.footerNav li:last-child  {
+    margin-right:0;
+}
+
+ul.footerNav li a {
+    width:2rem;
+    height:2rem;
+    display:inline-block;
+}
+
+ul.footerNav li a.email {
+    background: transparent url(../assets/email.svg) no-repeat 50% 100%;
+    background-size: 80% 80%;
+}
+
+ul.footerNav li a.twitter {
+    background: transparent url(../assets/twitter.svg) no-repeat 50% 50%;
+    background-size: 80% 80%;
+}
+
+ul.footerNav li a.instagram {
+    background: transparent url(../assets/instagram.svg) no-repeat 50% 50%;
+    background-size: 80% 80%;
+}
+
+ul.footerNav li a.linkedin {
+    background: transparent url(../assets/linkedin.svg) no-repeat 50% 50%;
+    background-size: 80% 80%;
+}
+
+
 /* 
 Media Query: Larger than tablet 
 
@@ -186,8 +223,13 @@ Media Query: Larger than tablet
         letter-spacing:.08rem;
         line-height:2rem;
         margin-top:1.4rem;
-        width:100vw;
-    }   
+        width:100%;
+    }
+    
+    #wrapper {
+        grid-template-columns: 8% 84% 8%;  
+        grid-template-rows: 10% 64% 26%;
+}
 
     footer {
     color:red;
@@ -214,8 +256,14 @@ Media Query: Larger than tablet
         letter-spacing:.08rem;
         line-height:2rem;
         margin-top:1.6rem;
-        width:100vw;
-    }   
+        width:100%;
+    }
+    
+    #wrapper {
+        grid-template-columns: 8% 84% 8%;  
+        grid-template-rows: 10% 64% 26%;
+}
+
 
     footer {
     color:red;
