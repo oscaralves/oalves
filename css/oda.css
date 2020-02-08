@@ -176,7 +176,7 @@ ul.footerNav li:last-child  {
 ul.footerNav li a {
     width:2rem;
     height:2rem;
-    display:inline-block;
+    display:inline-block;    
 }
 
 ul.footerNav li a.email {
@@ -198,7 +198,6 @@ ul.footerNav li a.twitter {
     background: transparent url(../assets/xpto.svg) no-repeat 50% 110%;
     background-size: 80% 80%;
 }
-
 
 /* 
 Media Query: Larger than tablet 
@@ -230,7 +229,6 @@ Media Query: Larger than tablet
     }
     
 }
-
 
 @media (min-width: 1200px) {
     
