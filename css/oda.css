@@ -186,11 +186,6 @@ ul.footerNav li a.email {
     background-size: 80% 80%;
 }
 
-ul.footerNav li a.twitter {
-    background: transparent url(../assets/twitter.svg) no-repeat 50% 110%;
-    background-size: 80% 80%;
-}
-
 ul.footerNav li a.instagram {
     background: transparent url(../assets/instagram.svg) no-repeat 50% 80%;
     background-size: 70% 70%;
@@ -198,6 +193,11 @@ ul.footerNav li a.instagram {
 
 ul.footerNav li a.linkedin {
     background: transparent url(../assets/linkedin.svg) no-repeat 50% 80%;
+    background-size: 80% 80%;
+}
+
+ul.footerNav li a.twitter {
+    background: transparent url(../assets/xpto.svg) no-repeat 50% 110%;
     background-size: 80% 80%;
 }
 
@@ -260,7 +260,6 @@ Media Query: Larger than tablet
     }
     
     ul.footerNav li {
-
         margin-right:2rem;
     }
     
