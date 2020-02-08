@@ -163,8 +163,6 @@ footer {
     text-align: center;
 }
 
-
-
 ul.footerNav li {
     list-style-type: none;
     display:inline;
@@ -229,12 +227,7 @@ Media Query: Larger than tablet
     #wrapper {
         grid-template-columns: 8% 84% 8%;  
         grid-template-rows: 10% 64% 26%;
-}
-
-    footer {
-    color:red;
-    } 
-      
+    }
     
 }
 
@@ -268,10 +261,4 @@ Media Query: Larger than tablet
         grid-template-rows: 10% 64% 26%;
     }
 
-
-    footer {
-    color:red;
-    } 
-      
-    
 }
