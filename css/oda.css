@@ -182,22 +182,22 @@ ul.footerNav li a {
 }
 
 ul.footerNav li a.email {
-    background: transparent url(../assets/email.svg) no-repeat 50% 100%;
+    background: transparent url(../assets/email.svg) no-repeat 50% 110%;
     background-size: 80% 80%;
 }
 
 ul.footerNav li a.twitter {
-    background: transparent url(../assets/twitter.svg) no-repeat 50% 50%;
+    background: transparent url(../assets/twitter.svg) no-repeat 50% 110%;
     background-size: 80% 80%;
 }
 
 ul.footerNav li a.instagram {
-    background: transparent url(../assets/instagram.svg) no-repeat 50% 50%;
-    background-size: 80% 80%;
+    background: transparent url(../assets/instagram.svg) no-repeat 50% 80%;
+    background-size: 70% 70%;
 }
 
 ul.footerNav li a.linkedin {
-    background: transparent url(../assets/linkedin.svg) no-repeat 50% 50%;
+    background: transparent url(../assets/linkedin.svg) no-repeat 50% 80%;
     background-size: 80% 80%;
 }
 
